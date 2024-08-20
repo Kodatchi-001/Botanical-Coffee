@@ -1,4 +1,5 @@
-import Header from "../components/header";
+import Header from "../../components/header";
+import Section_1 from "./section-1";
 
 export default function Home_Page() {
     return <>
@@ -55,5 +56,6 @@ export default function Home_Page() {
                 </div>
             </div>
         </section>
+        <Section_1/>
     </>
 }
