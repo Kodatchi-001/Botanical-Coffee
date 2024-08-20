@@ -4,6 +4,7 @@
     font-family: 'Satoshi', sans-serif;
 }
 
+
 .header-border,
 .border-transparent,
 .border-transparent-radius,
@@ -12,6 +13,10 @@
 #cercle-3,
 .border-transparent-navbar {
     border: 1px solid rgba(255, 255, 255, 0.58);
+}
+
+.header-border-v3,.p-section-1{
+    transition: 0.8s ease;
 }
 
 .Animation-header-left {
