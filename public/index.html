@@ -13,17 +13,6 @@
 <body>
   <div id="root"></div>
 
-
-  <script>
-    window.addEventListener('wheel', function (event) {
-      event.preventDefault(); // Empêche le comportement de défilement par défaut
-
-      const scrollAmount = event.deltaY * 0.2; // Ajustez ce facteur pour contrôler la vitesse
-      window.scrollBy({
-        top: scrollAmount,
-      });
-    }, { passive: false });
-  </script>
 </body>
 
 </html>
