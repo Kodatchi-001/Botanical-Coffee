@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.header-border,
+.border-transparent,
+.border-transparent-radius,
+#cercle-1,
+#cercle-2,
+#cercle-3 ,
+.border-transparent-navbar{
+    border: 1px solid rgba(255, 255, 255, 0.58);
+}
+
+.Animation-header-left {
+    animation: Animation-header-left 1.2s ease-in-out;
+}
+
+@keyframes Animation-header-left {
+    from {
+        margin-left: -15vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
+}
+
+.Animation-header-right {
+    animation: Animation-header-right 1.2s ease-in-out;
+}
+
+@keyframes Animation-header-right {
+    from {
+        margin-right: -15vw;
+    }
+
+    to {
+        margin-right: 0vw;
+    }
+}
+
+.background-image {
+    background-image: url(../assets/background-home-page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-blur-black {
+    background-color: rgba(0, 0, 0, 0.539);
+}
+
+.border-transparent {
+    backdrop-filter: blur(20px);
+}
+
+.border-size {
+    border: 2px solid black;
+}
+
+.bg-rotate {
+    border-radius: 40px 0px 0px 0px;
+}
+
+.border-transparent-radius {
+    border-radius: 25px;
+    backdrop-filter: blur(30px);
+}
+
+#cercle-1 {
+    background-image: url(../assets/background-home-page.jpg);
+    background-size: cover;
+}
+
+#cercle-2 {
+    background-image: url(../assets/background-image-1.jpg);
+    background-size: cover;
+}
+
+#cercle-3 {
+    background-image: url(../assets/background-image-2.jpg);
+    background-size: cover;
+}
+
+.Animation-tittle {
+    animation: Animation-tittle 1s ease-in-out;
+}
+
+@keyframes Animation-tittle {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+        margin-bottom: -80vh;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        margin-bottom: 0vh;
+    }
+}
+
+.border-transparent-navbar{
+    backdrop-filter: blur(30px);
+}
