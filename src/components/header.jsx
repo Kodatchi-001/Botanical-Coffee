@@ -33,21 +33,21 @@ export default function Header() {
             </div>
         </header>
         {/*Navbar-V3*/}
-        <header className= {`w-[40%] h-[8vh] bottom-2 ${scrolled_navbar ? 'animate' : 'mb-[-20vh]'} hidden lg:flex rounded-full bg-black border-white fixed z-50 header-border-v3`}>
+        <header className= {`w-[40%] h-[8vh] bottom-2 ${scrolled_navbar ? 'animate' : 'mb-[-20vh]'} hidden lg:flex rounded-full border-transparent border-white fixed z-50 header-border-v3`}>
             <ul className="w-full h-full flex justify-between items-center px-2">
-                <li className="px-8 py-2 rounded-full text-lg bg-white cursor-pointer header-border-v3 z-20">
+                <li className="px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20 ">
                     <a href="">Home</a>
                 </li>
-                <li className="px-8 py-2 rounded-full text-lg bg-white cursor-pointer header-border-v3 z-20">
+                <li className="px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20">
                     <a href="">Menu</a>
                 </li>
-                <li className="px-8 py-2 rounded-full text-lg bg-white cursor-pointer header-border-v3 z-20">
+                <li className="px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20">
                     <a href="">Locations</a>
                 </li>
-                <li className="px-8 py-2 rounded-full text-lg bg-white cursor-pointer header-border-v3 z-20">
+                <li className="px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20">
                     <a href="">Jobs</a>
                 </li>
-                <li className="px-2 py-1 rounded-full text-xl text-orange-500 bg-white cursor-pointer">
+                <li className="px-2 py-1 rounded-full text-xl text-orange-500 bg-black cursor-pointer">
                     <i class='bx bx-cart text-2xl text-orange-500'></i>
                 </li>
             </ul>

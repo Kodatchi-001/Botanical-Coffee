@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
 .header-border,
+.header-border-v3,
 .border-transparent,
 .border-transparent-radius,
 #cercle-1,
 #cercle-2,
 #cercle-3,
 .border-transparent-navbar {
-    border: 1px solid rgba(255, 255, 255, 0.58);
+    border: 2px solid rgba(255, 255, 255, 0.58);
 }
 
-.header-border-v3,.p-section-1{
+.header-border-v3,.p-section-1,.navbar-v2{
     transition: 0.8s ease;
 }
 

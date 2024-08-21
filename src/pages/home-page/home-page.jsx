@@ -6,7 +6,7 @@ export default function Home_Page() {
         <section className="w-full h-screen p-3">
             <div className="w-full h-full rounded-3xl background-image">
                 <div className="w-full h-full rounded-3xl flex flex-wrap background-blur-black">
-                    <div className="w-full h-[15%] flex justify-end lg:justify-center items-center relative px-6 lg:px-0">
+                    <div className="w-full h-[15%] flex justify-end lg:justify-center items-start lg:items-center relative p-3 lg:p-0">
                         <Header />
                     </div>
                     <div className="w-full h-1/2 flex justify-center items-center text-white">
@@ -42,7 +42,7 @@ export default function Home_Page() {
                         </div>
                         <div className="w-full lg:w-1/4 h-5/6 flex justify-end mt-auto lg:flex-wrap absolute lg:relative">
                             <div className="w-[30%] lg:w-full h-full lg:h-1/2 flex justify-center lg:justify-end items-end lg:items-center px-5 z-10 py-5 lg:py-0">
-                                <a href="#" className="flex items-center text-4xl p-2 rounded-full border-transparent cursor-pointer text-orange-500">
+                                <a href="#section-1" className="flex items-center text-4xl p-2 rounded-full border-transparent cursor-pointer text-orange-500">
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                             </div>

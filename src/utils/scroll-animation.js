@@ -6,7 +6,7 @@ export function Scrolle_animation() {
     const handleScroll = () => {
         const scrollY = window.scrollY;
 
-        if (scrollY > 500) {
+        if (scrollY > 150) {
             setScrolled_navbar(true);
         }
         else {
