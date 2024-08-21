@@ -5,8 +5,8 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgba(220, 220, 220, 0.559);
+body {
+    background-color: rgba(220, 220, 220, 0.454);
 }
 
 .header-border,
@@ -21,7 +21,9 @@ body{
     border: 2px solid rgba(255, 255, 255, 0.58);
 }
 
-.header-border-v3,.p-section-1,.navbar-v2{
+.header-border-v3,
+.p-section-1,
+.navbar-v2 {
     transition: 0.8s ease;
 }
 
@@ -132,11 +134,12 @@ body{
     background-size: cover;
 }
 
-.border-blur{
+.border-blur {
     border-top: 1px solid rgba(255, 255, 255, 0.42);
 }
 
-.button-blur,.button-blur-icone{
+.button-blur,
+.button-blur-icone {
     background-color: rgba(205, 204, 204, 0.247);
     /* Couleur blanche semi-transparente */
     backdrop-filter: blur(10px);
@@ -174,15 +177,79 @@ body{
     }
 }
 
-.cards-shop img,i{
+.cards-shop img,
+i {
     transition: 0.5s ease;
 }
 
-.cards-shop:hover{
-    img{
+.cards-shop:hover {
+    img {
         scale: 1.1;
     }
-    i:first-child{
+
+    i:first-child {
         color: red;
+    }
+}
+
+#menu-1 {
+    background-image: url(../assets/background-image-2.jpg);
+    background-size: cover;
+}
+
+#menu-2 {
+    background-image: url(../assets/menu-2.png);
+    background-size: cover;
+}
+
+#menu-3 {
+    background-image: url(../assets/menu-3.png);
+    background-size: cover;
+}
+
+#menu-4 {
+    background-image: url(../assets/menu-4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width : 1023px) {
+    .cards-section-4{
+
+        div:last-child {
+            background-color: rgba(205, 204, 204, 0.162);
+            backdrop-filter: blur(10px);
+        }
+
+        div i:last-child {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+
+@media (min-width : 1024px) {
+    .cards-section-4,
+    div:first-child,
+    div:last-child {
+        transition: 0.8s ease;
+    }
+
+    .cards-section-4:hover {
+        div:first-child {
+            height: 40%;
+        }
+
+        div:last-child {
+            height: 60%;
+            background-color: rgba(205, 204, 204, 0.162);
+            backdrop-filter: blur(10px);
+        }
+
+        div i:last-child {
+            background-color: white;
+            color: black;
+        }
     }
 }
