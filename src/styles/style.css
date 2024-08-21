@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: rgba(220, 220, 220, 0.559);
+}
 
 .header-border,
 .header-border-v3,
@@ -13,6 +16,7 @@
 #cercle-1,
 #cercle-2,
 #cercle-3,
+.button-blur-icone,
 .border-transparent-navbar {
     border: 2px solid rgba(255, 255, 255, 0.58);
 }
@@ -128,11 +132,11 @@
     background-size: cover;
 }
 
-.border-blur {
+.border-blur{
     border-top: 1px solid rgba(255, 255, 255, 0.42);
 }
 
-.button-blur {
+.button-blur,.button-blur-icone{
     background-color: rgba(205, 204, 204, 0.247);
     /* Couleur blanche semi-transparente */
     backdrop-filter: blur(10px);
@@ -167,5 +171,18 @@
     .tittle-cards-2,
     .icone-cards {
         opacity: 1;
+    }
+}
+
+.cards-shop img,i{
+    transition: 0.5s ease;
+}
+
+.cards-shop:hover{
+    img{
+        scale: 1.1;
+    }
+    i:first-child{
+        color: red;
     }
 }

@@ -51,7 +51,6 @@ export default function Header() {
                     <i class='bx bx-cart text-2xl text-orange-500'></i>
                 </li>
             </ul>
-
         </header>
     </>
 }

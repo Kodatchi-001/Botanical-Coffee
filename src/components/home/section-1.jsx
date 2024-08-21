@@ -1,7 +1,6 @@
-import Header from "../../components/header";
-import Section_1 from "./section-1";
+import Header from "../header";
 
-export default function Home_Page() {
+export default function Section_1() {
     return <>
         <section className="w-full h-screen p-3">
             <div className="w-full h-full rounded-3xl background-image">
@@ -56,6 +55,5 @@ export default function Home_Page() {
                 </div>
             </div>
         </section>
-        <Section_1/>
     </>
 }
