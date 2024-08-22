@@ -253,3 +253,13 @@ i {
         }
     }
 }
+
+#card-section-5{
+    background-image: url(../assets/background-home-page.jpg);
+    background-size: cover;
+    filter: grayscale(0%);
+}
+
+#card-section-5:hover{
+    filter: grayscale(100%);
+}
