@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(220, 220, 220, 0.454);
+    background-color: #dcdcdc74;
 }
 
 .header-border,
@@ -17,6 +17,7 @@ body {
 #cercle-2,
 #cercle-3,
 .button-blur-icone,
+.button-blur-icone-footer,
 .border-transparent-navbar {
     border: 2px solid rgba(255, 255, 255, 0.58);
 }
@@ -214,7 +215,7 @@ i {
 }
 
 @media (max-width : 1023px) {
-    .cards-section-4{
+    .cards-section-4 {
 
         div:last-child {
             background-color: rgba(205, 204, 204, 0.162);
@@ -230,6 +231,7 @@ i {
 
 
 @media (min-width : 1024px) {
+
     .cards-section-4,
     div:first-child,
     div:last-child {
@@ -254,16 +256,41 @@ i {
     }
 }
 
-#card-section-5{
+#card-section-5 {
     background-image: url(../assets/background-home-page.jpg);
     background-size: cover;
     filter: grayscale(0%);
 }
 
-#card-section-5:hover{
+#card-section-5:hover {
     filter: grayscale(100%);
 }
 
-.cards-section-6{
+.cards-section-6 {
     transition: 0.8s ease;
+}
+
+.button-blur-footer {
+    backdrop-filter: blur(10px);
+    background-color: rgba(205, 204, 204, 0.176);
+}
+
+.button-blur-footer a:hover {
+    color: orange;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.button-blur-footer i:hover {
+    color: orange;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button-blur-footer-link {
+    border-top: 1px solid rgba(255, 255, 255, 0.297);
+}
+
+.button-blur-footer-left {
+    border-left: 1px solid rgba(255, 255, 255, 0.297);
 }

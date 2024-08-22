@@ -1,0 +1,43 @@
+export default function Footer() {
+    return <>
+        <footer className="w-full h-screen p-3 pt-8 flex absolute z-50">
+            <div className="w-full h-full rounded-3xl flex flex-wrap pt-10 px-8 background-image">
+                <div className="w-full h-1/2 flex flex-col justify-evenly items-center text-white">
+                    <h1 className="text-5xl lg:text-7xl text-center lg:text-start">Join the community!</h1>
+                    <div className="w-full lg:w-1/3 flex justify-around flex-wrap gap-3 lg:gap-0">
+                        <input type="email" className="w-full lg:w-auto pl-10 lg:px-8 py-4 rounded-full text-black" placeholder="Your-email@gmail.com" />
+                        <button className="w-full lg:w-auto lg:px-8 py-3 lg:py-2 text-lg rounded-full bg-orange-500">Sign Up</button>
+                    </div>
+                    <p className="w-full text-center">No spam. Just weekly news from the Botanic world.</p>
+                </div>
+                <div className="w-full h-[35%] rounded-3xl flex justify-center flex-wrap mt-auto button-blur-footer mb-14">
+                    <div className="w-full h-[60%] flex justify-center items-center gap-4 text-2xl text-white">
+                        <i class='bx bxl-instagram button-blur-icone-footer p-4 rounded-full'></i>
+                        <i class='bx bxl-pinterest-alt button-blur-icone-footer p-4 rounded-full' ></i>
+                        <i class='bx bxl-twitter button-blur-icone-footer p-4 rounded-full' ></i>
+                        <i class='bx bx-envelope button-blur-icone-footer p-4 rounded-full' ></i>
+                    </div>
+                    <div className="w-[95%] h-[40%] flex justify-center items-center button-blur-footer-link">
+                        <div className="w-[40%] h-3/6 lg:flex justify-around items-center text-white hidden">
+                            <ul className="w-full h-full flex justify-end gap-5 items-center text-lg lg:pr-8 flex-wrap">
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Imprint</a></li>
+                                <li><a href="">404</a></li>
+                            </ul>
+                        </div>
+                        <div className="w-5/6 h-5/6 lg:w-[40%] lg:h-3/6 flex justify-around items-center lg:button-blur-footer-left text-white">
+                            <ul className="w-full h-full flex lg:justify-around items-center lg:text-lg lg:px-3 flex-wrap">
+                                <li className="w-1/3 lg:w-auto text-center lg:text-start"><a href="">HomePage</a></li>
+                                <li className="w-1/3 lg:w-auto text-center lg:text-start"><a href="">Menu</a></li>
+                                <li className="w-1/3 lg:w-auto text-center lg:text-start"><a href="">Shop</a></li>
+                                <li className="w-1/3 lg:w-auto text-center lg:text-start"><a href="">Locations</a></li>
+                                <li className="w-1/3 lg:w-auto text-center lg:text-start"><a href="">Jobs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </>
+}

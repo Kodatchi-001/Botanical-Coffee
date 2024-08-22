@@ -2,16 +2,10 @@ import { useEffect, useState } from "react"
 
 export function Scrolle_animation() {
     const [scrolled_navbar, setScrolled_navbar] = useState(false);
-    
+
     const handleScroll = () => {
         const scrollY = window.scrollY;
-
-        if (scrollY > 150) {
-            setScrolled_navbar(true);
-        }
-        else {
-            setScrolled_navbar(false);
-        }
+        scrollY > 150 ?  setScrolled_navbar(true) : setScrolled_navbar(false);
     };
 
     useEffect(() => {
@@ -21,5 +15,5 @@ export function Scrolle_animation() {
         };
     }, []);
 
-    return { scrolled_navbar}
+    return { scrolled_navbar }
 }

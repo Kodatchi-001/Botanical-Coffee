@@ -1,3 +1,4 @@
+import Footer from "../../components/footer";
 import Section1 from "../../components/home/section-1";
 import Section2 from "../../components/home/section-2";
 import Section3 from "../../components/home/section-3";
@@ -13,5 +14,6 @@ export default function Home_Page() {
         <Section_4/>
         <Section_5/>
         <Section_6/>
+        <Footer/>
     </>
 }
