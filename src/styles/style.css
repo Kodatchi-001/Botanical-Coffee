@@ -263,3 +263,7 @@ i {
 #card-section-5:hover{
     filter: grayscale(100%);
 }
+
+.cards-section-6{
+    transition: 0.8s ease;
+}
