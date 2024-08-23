@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//Import css
-import './styles/style.css'
-//Import Pages
+// Import css
+import './styles/style.css';
+// Import Pages
 import Home_Page from './pages/home/index';
+import Menu_Page from './pages/menu/index';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home_Page/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home_Page />} />
+        <Route path="/Menu" element={<Menu_Page />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
-
