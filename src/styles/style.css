@@ -6,10 +6,11 @@
 }
 
 body {
-    background-color: #dcdcdc74;
+    background-color: #f0efef;
 }
 
 .header-border,
+header li,
 .header-border-v3,
 .border-transparent,
 .border-transparent-radius,

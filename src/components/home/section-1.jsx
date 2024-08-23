@@ -10,9 +10,9 @@ export default function Section_1() {
                     </div>
                     <div className="w-full h-1/2 flex justify-center items-center text-white">
                         <div className="w-full lg:w-4/6 h-[55%] lg:h-[85%] flex items-center justify-center flex-wrap Animation-tittle">
-                            <h1 className="w-5/6 lg:w-[82%] text-center lg:text-start text-2xl lg:text-4xl">Enjoy the taste of</h1>
+                            <h1 className="w-5/6 lg:w-full xl:w-[80%] text-center xl:text-start text-2xl lg:text-4xl">Enjoy the taste of</h1>
                             <h1 className="text-6xl lg:text-[7.5rem] lg:scale-150 mt-[-2vh]">botanical</h1>
-                            <p className="sm:w-5/6 lg:w-4/6 text-center text-stone-300">
+                            <p className="sm:w-5/6 md:w-4/5 lg:w-4/6 text-center text-stone-300">
                                 Our coffee doesn’t have to taste that way. But it does.It’s
                                 not your typical. It's unnecessarily good. Maybe that's because
                                 we're unnecessarily driven.
@@ -20,7 +20,7 @@ export default function Section_1() {
                         </div>
                     </div>
                     <div className="w-full h-[35%] flex lg:justify-between items-end lg:items-start relative">
-                        <div className="w-full lg:w-1/4 h-full lg:h-5/6 px-6 lg:py-10 pb-28 lg:pb-0 flex justify-between">
+                        <div className="w-full sm:w-4/6 lg:w-1/3 xl:w-1/4 h-full lg:h-4/6 xl:h-5/6 px-6 lg:py-10 pb-28 lg:pb-0 flex justify-between">
                             <div className="w-[73%] h-full flex flex-col justify-center gap-2 px-5 text-white border-transparent-radius overflow-hidden">
                                 <h1 className="text-2xl">99+Beans</h1>
                                 <p className="text-sm">
@@ -45,8 +45,8 @@ export default function Section_1() {
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                             </div>
-                            <div className="w-[70%] sm:w-auto h-1/3 lg:h-[36%] sm:px-3 flex justify-center sm:justify-end items-end mt-auto ml-auto bg-white bg-rotate z-20 ">
-                                <button className="px-5 lg:px-11 py-3 rounded-full text-2xl border-size text-black">
+                            <div className="w-[70%] sm:w-auto h-1/3 lg:h-[36%] sm:px-3 flex justify-center sm:justify-end items-center mt-auto ml-auto bg-[#f0efef] bg-rotate z-20">
+                                <button className="px-5 lg:px-6 xl:px-11 py-3 rounded-full text-2xl border-size text-black">
                                     Explore Goodies
                                 </button>
                             </div>

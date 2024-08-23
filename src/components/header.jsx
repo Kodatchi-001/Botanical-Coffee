@@ -26,8 +26,8 @@ export default function Header() {
             </ul>
         </header>
         {/*Navbar-V2*/}
-        <header className="w-[45%] lg:h-4/6 flex justify-between items-center rounded-3xl overflow-hidden fixed px-5 py-4 text-white border-transparent-navbar lg:hidden z-50">
-            <div className="w-full h-full flex justify-between">
+        <header className="lg:h-4/6 flex justify-between items-center rounded-3xl overflow-hidden fixed px-5 py-4 text-white border-transparent-navbar lg:hidden z-50">
+            <div className="w-full h-full flex justify-between gap-3">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
                 <h1 className="text-2xl flex items-center">botanical</h1>
             </div>
