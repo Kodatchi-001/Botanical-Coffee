@@ -1,8 +1,8 @@
+import Footer_v2 from "../footer-v2";
 import Header_v2 from "../header-v2";
-
 export default function Menu_section_1() {
     return <>
-        <section className="w-full lg:h-screen flex flex-wrap">
+        <section className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3">
                 <div className="w-full h-full flex flex-col justify-between rounded-3xl p-3 pb-9 pl-8 background-image-menu">
                     <div className="flex justify-end">
@@ -14,9 +14,9 @@ export default function Menu_section_1() {
             <div className="w-1/2 h-full hidden lg:flex">
 
             </div>
-            <div className="w-full lg:w-1/2 lg:h-[180vh] px-2 py-3">
+            <div className="w-full lg:w-1/2 h-full px-2 py-3">
                 <div className="w-full h-full flex justify-center lg:justify-start flex-wrap rounded-3xl lg:pl-28 lg:pr-8 gap-8 lg:gap-0">
-                    <div className="w-full h-[28%] lg:flex flex-col justify-center gap-7 hidden">
+                    <div className="w-full h-[40vh] lg:flex flex-col justify-center gap-7 hidden">
                         <h1 className="text-center lg:text-start text-3xl">
                             It’s not your typical. It's unnecessarily good
                         </h1>
@@ -76,7 +76,7 @@ export default function Menu_section_1() {
 
                         </div>
                     </div>
-                    <div className="w-5/6 lg:h-[70vh] flex flex-col justify-center gap-10 border-t lg:border-gray-500">
+                    <div className="w-5/6 lg:h-[70vh] flex flex-col lg:justify-center gap-10 lg:border-t lg:border-gray-500">
                         <h1 className="w-full text-6xl">Bakery</h1>
                         <div className="w-full h-1/3 lg:ml-8">
                             <table className="w-[95%] h-full flex flex-col justify-between gap-2">
@@ -101,10 +101,10 @@ export default function Menu_section_1() {
                                     <td className="text-xl">$4.5</td>
                                 </tr>
                             </table>
-
                         </div>
                     </div>
                 </div>
+                <Footer_v2 />
             </div>
         </section>
     </>
