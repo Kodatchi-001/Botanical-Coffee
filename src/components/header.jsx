@@ -1,9 +1,12 @@
-import Home_Page from '../pages/home';
+import { useEffect, useState } from 'react';
 import { Scrolle_animation } from '../utils/scroll-animation';
 import { Link } from "react-router-dom";
 
 export default function Header() {
     const { scrolled_navbar } = Scrolle_animation();
+
+    const [valide, setvalide] = useState(false);
+    const Navbar_v2 = _ => setvalide(!valide)
 
     return <>
         {/*Navbar-V1*/}
@@ -21,8 +24,16 @@ export default function Header() {
             </div>
         </header>
         {/*Navbar-V2*/}
-        <header className="lg:h-4/6 flex justify-between items-center rounded-3xl overflow-hidden fixed px-5 py-4 text-white border-transparent-navbar lg:hidden z-50">
-            <div className="w-full h-full flex justify-between gap-3">
+        <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white border-transparent-navbar lg:hidden z-50"
+            onClick={Navbar_v2}>
+            <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
+                <Link to="/" className=''>Home</Link>
+                <Link to="/Menu">Menu</Link>
+                <Link to="/">Locations</Link>
+                <Link to="/">Jobs</Link>
+                <Link to="/">Shop</Link>
+            </div>
+            <div className="w-5/6 h-full flex gap-5 px-2 py-5 button-blur-footer-link">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
                 <h1 className="text-2xl flex items-center">botanical</h1>
             </div>
