@@ -5,9 +5,6 @@ export default function Menu_section_1() {
         <section className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3">
                 <div className="w-full h-full flex flex-col justify-between rounded-3xl p-3 pb-9 pl-8 background-image-menu">
-                    <div className="flex justify-end">
-                        <Header_v2 />
-                    </div>
                     <h1 className="text-5xl lg:text-7xl text-white mt-auto">Menu</h1>
                 </div>
             </div>
