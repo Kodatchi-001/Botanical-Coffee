@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Scrolle_animation } from '../utils/scroll-animation';
 import { Link } from "react-router-dom";
+import { Navbar_v2 } from '../utils/navbar-v2';
 
 export default function Header() {
     const { scrolled_navbar } = Scrolle_animation();
-
     const [valide, setvalide] = useState(false);
-    const Navbar_v2 = _ => setvalide(!valide)
+    const toggleNavbar = Navbar_v2(setvalide,valide)
+
+
 
     return <>
         {/*Navbar-V1*/}
@@ -25,7 +27,7 @@ export default function Header() {
         </header>
         {/*Navbar-V2*/}
         <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white border-transparent-navbar lg:hidden z-50"
-            onClick={Navbar_v2}>
+            onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
                 <Link to="/" className=''>Home</Link>
                 <Link to="/Menu">Menu</Link>
