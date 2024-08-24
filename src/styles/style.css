@@ -301,3 +301,22 @@ i {
     background-size: cover;
     background-position: bottom;
 }
+
+#locations-1{
+    background-image: url(../assets/locations-1.png);
+    background-size: cover;
+}
+
+#locations-2{
+    background-image: url(../assets/locations-2.png);
+    background-size: cover;
+}
+
+#locations-3{
+    background-image: url(../assets/locations-3.png);
+    background-size: cover;
+}
+
+.background-dark-img{
+    background: linear-gradient(188deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%); opacity: 1;
+}

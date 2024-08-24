@@ -1,14 +1,24 @@
-import { useState } from 'react';
-import { Scrolle_animation } from '../utils/scroll-animation';
+import { useEffect,useState } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar_v2 } from '../utils/navbar-v2';
 
 export default function Header() {
-    const { scrolled_navbar } = Scrolle_animation();
+    const [scrolled_navbar, setScrolled_navbar] = useState(false);
     const [valide, setvalide] = useState(false);
-    const toggleNavbar = Navbar_v2(setvalide,valide)
 
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        scrollY > 150 ?  setScrolled_navbar(true) : setScrolled_navbar(false);
+    };
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
+    const toggleNavbar = Navbar_v2(setvalide,valide);
 
     return <>
         {/*Navbar-V1*/}
@@ -18,9 +28,9 @@ export default function Header() {
                 <Link to="/Menu" className='px-8 py-2 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-left z-10'>Menu</Link>
             </div>
             <div className="w-1/4 h-full lg:flex justify-end items-center gap-2 text-black">
-                <Link to="/" className='px-8 py-2 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>Locations</Link>
-                <Link to="/" className='px-8 py-2 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>Jobs</Link>
-                <Link to="/" className='px-2 py-1 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>
+                <Link to="/Locations" className='px-8 py-2 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>Locations</Link>
+                <Link to="/Jobs" className='px-8 py-2 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>Jobs</Link>
+                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-white border-2 border-transparent cursor-pointer Animation-header-right'>
                     <i class='bx bx-cart text-2xl text-orange-500'></i>
                 </Link>
             </div>
@@ -31,9 +41,9 @@ export default function Header() {
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
                 <Link to="/" className=''>Home</Link>
                 <Link to="/Menu">Menu</Link>
-                <Link to="/">Locations</Link>
-                <Link to="/">Jobs</Link>
-                <Link to="/">Shop</Link>
+                <Link to="/Locations">Locations</Link>
+                <Link to="/Jobs">Jobs</Link>
+                <Link to="/Shop">Shop</Link>
             </div>
             <div className="w-5/6 h-full flex gap-5 px-2 py-5 button-blur-footer-link">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
@@ -45,9 +55,9 @@ export default function Header() {
             <div className="w-full h-full flex justify-between items-center px-2">
                 <Link to="/" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Home</Link>
                 <Link to="/Menu" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Menu</Link>
-                <Link to="/" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Locations</Link>
-                <Link to="/" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Jobs</Link>
-                <Link to="/" className='px-2 py-1 rounded-full text-xl text-orange-500 bg-black cursor-pointer'>
+                <Link to="/Locations" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Locations</Link>
+                <Link to="/Jobs" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer header-border-v3 z-20'>Jobs</Link>
+                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-orange-500 bg-black cursor-pointer'>
                     <i class='bx bx-cart text-2xl text-orange-500'></i>
                 </Link>
             </div>
