@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Scrolle_animation } from '../utils/scroll-animation';
 import { Link } from "react-router-dom";
 
