@@ -3,7 +3,7 @@ export default function Locations_section_1() {
     return <>
         <section className="w-full lg:h-screen flex flex-wrap p-3 gap-5 lg:gap-0">
             <div className="w-full lg:w-[32%] h-full flex flex-col gap-20 lg:fixed">
-                <div className="w-full h-[30vh] lg:h-1/3 background-image rounded-3xl flex items-end px-6 py-8">
+                <div className="w-full h-[40vh] lg:h-1/3 background-image rounded-3xl flex items-end px-6 py-8">
                     <h1 className="text-5xl text-white ">Locations</h1>
                 </div>
                 <div className="w-full h-1/4 lg:flex flex-col justify-center gap-3 text-3xl pl-6 hidden">
