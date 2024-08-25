@@ -178,7 +178,7 @@ i {
         scale: 1.1;
     }
 
-    i:first-child {
+    .icones:first-child {
         color: red;
     }
 }
@@ -316,34 +316,35 @@ i {
     background-position: 20%;
 }
 
-#coffee_1 {
+#background-image-cards-1 {
     background-image: url(../assets/coffee.png);
     background-size: cover;
     background-position: center;
 }
 
-#coffee_2 {
+
+#background-image-cards-2 {
     background-image: url(../assets/coffee-2.png);
     background-size: cover;
 }
 
-#coffee_3 {
+#background-image-cards-3 {
     background-image: url(../assets/coffee-3.png);
     background-size: cover;
     background-position: 50%;
 }
 
-#coffee_4 {
+#background-image-cards-4 {
     background-image: url(../assets/coffee-4.png);
     background-size: cover;
 }
 
-#coffee_5 {
+#background-image-cards-5 {
     background-image: url(../assets/coffee-5.png);
     background-size: cover;
     background-position: 50%;
 }
-#coffee_6 {
+#background-image-cards-6 {
     background-image: url(../assets/coffee-6.png);
     background-size: cover;
     background-position: 50%;
