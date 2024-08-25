@@ -9,6 +9,7 @@ import Locations from './pages/location';
 import Jobs from './pages/jobs';
 //Import React Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Shop from './pages/Shop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/Menu" element={<Menu_Page />} />
         <Route path="/Locations" element={<Locations/>} />
         <Route path="/Jobs" element={<Jobs/>} />
+        <Route path="/Shop" element={<Shop/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

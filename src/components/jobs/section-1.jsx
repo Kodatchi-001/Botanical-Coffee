@@ -12,7 +12,7 @@ export default function Jobs_section_1() {
 
             </div>
             <div className="w-full lg:w-1/2 h-full px-2 py-3">
-                <div className="w-full h-full flex justify-center lg:justify-start flex-wrap rounded-3xl px-8 lg:px-0 lg:pl-28 lg:pr-8 gap-8 lg:gap-0">
+                <div className="w-full h-full flex justify-center lg:justify-start flex-wrap rounded-3xl px-8 lg:px-0 lg:pl-28 lg:pr-8 gap-12 lg:gap-0">
                     <div className="w-[85%] h-[60vh] lg:flex flex-col justify-center gap-7 hidden">
                         <h1 className="text-center lg:text-start text-3xl">
                             Join our passionate team at Botanical!

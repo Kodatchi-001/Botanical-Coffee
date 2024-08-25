@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Section_4() {
     return <>
         <section className="w-full lg:h-[115vh] lg:px-8 xl:px-36 mt-16 flex flex-wrap gap-6 lg:gap-0">
@@ -15,7 +17,9 @@ export default function Section_4() {
                 <div className="w-full h-[48.2%] flex justify-between items-center flex-wrap gap-6 lg:gap-0">
                     <div className="w-full sm:w-[45%] lg:w-[64%] h-full rounded-3xl flex flex-wrap p-4 py-6 gap-5 lg:gap-0 text-white cards-section-4" id="menu-1">
                         <div className="w-full h-[75%] flex justify-end items-start">
-                            <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            <Link to="/Locations">
+                                <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            </Link>
                         </div>
                         <div className="w-full h-[25%] flex flex-col justify-around px-5 py-2 lg:py-5 gap-5 lg:gap-0 rounded-3xl overflow-hidden">
                             <h1 className="w-full lg:mb-5 text-5xl">Locations</h1>
@@ -28,7 +32,9 @@ export default function Section_4() {
                     </div>
                     <div className="w-full sm:w-[45%] lg:w-[34%] h-full rounded-3xl flex flex-wrap p-4 py-6 gap-5 lg:gap-0 text-white cards-section-4" id="menu-2">
                         <div className="w-full h-[75%] flex justify-end items-start">
-                            <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            <Link to="/Menu">
+                                <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            </Link>
                         </div>
                         <div className="w-full h-[25%] flex flex-col justify-around px-5 py-2 lg:py-5 gap-5 lg:gap-0 rounded-3xl overflow-hidden">
                             <h1 className="w-full lg:mb-5 text-5xl">Menu</h1>
@@ -42,7 +48,9 @@ export default function Section_4() {
                 <div className="w-full h-[48.2%] flex justify-between items-center flex-wrap gap-6 lg:gap-0">
                     <div className="w-full sm:w-[45%] lg:w-[34%] h-full rounded-3xl flex flex-wrap p-4  py-6  gap-5 lg:gap-0 text-white cards-section-4" id="menu-3">
                         <div className="w-full h-[75%] flex justify-end items-start">
-                            <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            <Link to="/Shop">
+                                <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            </Link>
                         </div>
                         <div className="w-full h-[25%] flex flex-col justify-around px-5 py-5 gap-5 rounded-3xl overflow-hidden">
                             <h1 className="w-full mb-2 text-5xl">Shop</h1>
@@ -53,7 +61,9 @@ export default function Section_4() {
                     </div>
                     <div className="w-full sm:w-[45%] lg:w-[64%] h-full rounded-3xl flex flex-wrap p-4 py-6 gap-5 lg:gap-0 text-white cards-section-4" id="menu-4">
                         <div className="w-full h-[75%] flex justify-end items-start">
-                            <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            <Link to="/Jobs">
+                                <i className="bx bx-chevron-right text-5xl p-2 scale-75 rounded-full cursor-pointer text-white border-2 border-white"></i>
+                            </Link>
                         </div>
                         <div className="w-full h-[25%] flex flex-col justify-around px-5 py-2 lg:py-5 gap-5 lg:gap-0 rounded-3xl overflow-hidden">
                             <h1 className="w-full lg:mb-5 text-5xl">Work with us</h1>

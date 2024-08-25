@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-h1{
+h1 {
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
     background-color: #f0efef;
 }
 
-.Border_White{
+.Border_White {
     border: 2px solid rgba(255, 255, 255, 0.58);
     transition: 0.8s ease;
 }
@@ -105,6 +105,7 @@ body {
     }
 }
 
+.background-blur,
 .border-transparent-navbar {
     backdrop-filter: blur(30px);
 }
@@ -167,7 +168,8 @@ body {
     }
 }
 
-.cards-shop img,i {
+.cards-shop img,
+i {
     transition: 0.5s ease;
 }
 
@@ -216,7 +218,6 @@ body {
         }
     }
 }
-
 
 @media (min-width : 1024px) {
 
@@ -283,33 +284,67 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.297);
 }
 
-.background-image-menu{
+.background-image-menu {
     background-image: url(../assets/menu-background.png);
     background-size: cover;
     background-position: bottom;
 }
 
-#locations-1{
+#locations-1 {
     background-image: url(../assets/locations-1.png);
     background-size: cover;
 }
 
-#locations-2{
+#locations-2 {
     background-image: url(../assets/locations-2.png);
     background-size: cover;
 }
 
-#locations-3{
+#locations-3 {
     background-image: url(../assets/locations-3.png);
     background-size: cover;
 }
 
-.background-dark-img{
-    background: linear-gradient(188deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%); opacity: 1;
+.background-dark-img {
+    background: linear-gradient(188deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    opacity: 1;
 }
 
-.background-image-jobs{
+.background-image-jobs {
     background-image: url(../assets/jobs.png);
     background-size: cover;
     background-position: 20%;
+}
+
+#coffee_1 {
+    background-image: url(../assets/coffee.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#coffee_2 {
+    background-image: url(../assets/coffee-2.png);
+    background-size: cover;
+}
+
+#coffee_3 {
+    background-image: url(../assets/coffee-3.png);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#coffee_4 {
+    background-image: url(../assets/coffee-4.png);
+    background-size: cover;
+}
+
+#coffee_5 {
+    background-image: url(../assets/coffee-5.png);
+    background-size: cover;
+    background-position: 50%;
+}
+#coffee_6 {
+    background-image: url(../assets/coffee-6.png);
+    background-size: cover;
+    background-position: 50%;
 }

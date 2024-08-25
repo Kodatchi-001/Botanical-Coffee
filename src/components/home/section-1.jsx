@@ -1,5 +1,4 @@
 import Header from "../header";
-
 export default function Section_1() {
     return <>
         <section className="w-full h-screen p-3">
@@ -27,14 +26,14 @@ export default function Section_1() {
                                     “Too far” is exactly where we want to be. All in the name of coffee.
                                 </p>
                             </div>
-                            <div className="w-[25%] h-full px-5 flex flex-col justify-center items-center border-transparent-radius overflow-hidden">
-                                <div className="p-7 z-30 mb-[-2vh] rounded-full cursor-pointer Border_White" id="Cercle-HomePage-1">
+                            <div className="w-[25%] h-full px-5 flex flex-col justify-center items-center border-transparent-radius Border_White overflow-hidden">
+                                <div className="p-7 z-30 mb-[-2vh] rounded-full Border_White" id="Cercle-HomePage-1">
 
                                 </div>
-                                <div className="p-7 z-20 mb-[-2vh] rounded-full cursor-pointer Border_White" id="Cercle-HomePage-2">
+                                <div className="p-7 z-20 mb-[-2vh] rounded-full Border_White" id="Cercle-HomePage-2">
 
                                 </div>
-                                <div className="p-7 z-10 rounded-full cursor-pointer Border_White" id="Cercle-HomePage-3">
+                                <div className="p-7 z-10 rounded-full Border_White" id="Cercle-HomePage-3">
 
                                 </div>
                             </div>

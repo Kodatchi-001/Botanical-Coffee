@@ -36,7 +36,7 @@ export default function Header() {
             </div>
         </header>
         {/*Navbar-V2*/}
-        <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white Border_White-navbar lg:hidden z-50"
+        <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white Border_White background-blur lg:hidden z-50"
             onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
                 <Link to="/" className=''>Home</Link>

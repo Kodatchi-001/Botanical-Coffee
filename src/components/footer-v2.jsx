@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer_v2() {
     return <>
-        <footer className="w-full h-[85vh] flex flex-col justify-between items-end">
+        <footer className="w-full h-[85vh] flex flex-col justify-between items-end mt-10">
             <div className="w-full h-[60%] rounded-3xl p-6" id="menu-1">
                 <div className="w-full h-full rounded-3xl flex justify-center flex-wrap button-blur-footer ">
                     <div className="w-full h-[60%] flex flex-col justify-center items-center gap-6 text-white">

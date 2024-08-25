@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 export default function Section_2() {
     useEffect(() => {
         const handleResize = () => {
@@ -68,7 +68,9 @@ export default function Section_2() {
                                 <p className="w-full lg:w-[90%] text-md">Botanical Coffee Shop in Prague offers a serene oasis with its lush decor and artisanal coffees.</p>
                             </div>
                             <div className="w-[10%] h-full flex justify-center items-center cursor-pointer icone-cards">
-                                <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                <Link to="/Locations">
+                                    <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full h-1/3 flex items-end">
@@ -91,7 +93,9 @@ export default function Section_2() {
                                 <p className="w-full lg:w-[90%] text-md">Berlin's dynamic coffee culture features innovative shops where baristas experiment with new brewing techniques.</p>
                             </div>
                             <div className="w-[10%] h-full flex justify-center items-center cursor-pointer icone-cards">
-                                <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                <Link to="/Locations">
+                                    <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full h-1/3 flex items-end">
@@ -114,7 +118,9 @@ export default function Section_2() {
                                 <p className="w-full lg:w-[90%] text-md">Vienna's coffee scene blends historic cafes and modern spots, all dedicated to perfecting the art of coffee making.</p>
                             </div>
                             <div className="w-[10%] h-full flex justify-center items-center cursor-pointer icone-cards">
-                                <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                <Link to="/Locations">
+                                    <i class='bx bx-chevron-right text-4xl px-3 py-2 rounded-full bg-white'></i>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full h-1/3 flex items-end">

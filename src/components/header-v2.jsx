@@ -9,7 +9,7 @@ export default function Header_v2() {
 
     return <>
         {/*Navbar-V2*/}
-        <header className="flex items-center flex-col rounded-3xl overflow-hidden gap-3 text-white border-transparent-radius Border_White z-50"
+        <header className="flex items-center flex-col rounded-3xl overflow-hidden gap-3 text-black background-blur border-2 border-black z-50"
             onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
                 <Link to="/" className=''>Home</Link>
@@ -18,7 +18,7 @@ export default function Header_v2() {
                 <Link to="/Jobs">Jobs</Link>
                 <Link to="/Shop">Shop</Link>
             </div>
-            <div className="w-5/6 h-full flex justify-center gap-5 px-6 py-5 button-blur-footer-link">
+            <div className="w-5/6 h-full flex justify-center gap-5 px-6 py-5 cursor-pointer">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
                 <h1 className="text-2xl flex items-center">botanical</h1>
             </div>
