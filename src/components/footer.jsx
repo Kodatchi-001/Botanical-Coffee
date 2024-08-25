@@ -12,10 +12,10 @@ export default function Footer() {
                 </div>
                 <div className="w-full h-[35%] rounded-3xl flex justify-center flex-wrap mt-auto button-blur-footer mb-14">
                     <div className="w-full h-[60%] flex justify-center items-center gap-4 text-2xl text-white">
-                        <i class='bx bxl-instagram button-blur-icone-footer p-4 rounded-full'></i>
-                        <i class='bx bxl-pinterest-alt button-blur-icone-footer p-4 rounded-full' ></i>
-                        <i class='bx bxl-twitter button-blur-icone-footer p-4 rounded-full' ></i>
-                        <i class='bx bx-envelope button-blur-icone-footer p-4 rounded-full' ></i>
+                        <i class='bx bxl-instagram button-blur-icone-footer Border_White p-4 rounded-full'></i>
+                        <i class='bx bxl-pinterest-alt button-blur-icone-footer Border_White p-4 rounded-full' ></i>
+                        <i class='bx bxl-twitter button-blur-icone-footer Border_White p-4 rounded-full' ></i>
+                        <i class='bx bx-envelope button-blur-icone-footer Border_White p-4 rounded-full' ></i>
                     </div>
                     <div className="w-[95%] h-[40%] flex justify-center items-center button-blur-footer-link">
                         <div className="w-[40%] h-3/6 lg:flex justify-around items-center text-white hidden">

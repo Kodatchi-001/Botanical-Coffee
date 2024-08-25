@@ -1,5 +1,5 @@
 import Footer_v2 from "../footer-v2";
-import Header_v2 from "../header-v2";
+
 export default function Menu_section_1() {
     return <>
         <section className="w-full flex flex-wrap">
