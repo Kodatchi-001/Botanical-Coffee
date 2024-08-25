@@ -22,7 +22,7 @@ export default function Products_section_1() {
                         results, it quickly became a favorite among coffee enthusiasts and baristas, even inspiring annual
                         world championships to determine the best AeroPress coffee.
                     </p>
-                    <div className="w-5/6 xl:w-1/2 h-1/2 flex flex-wrap gap-3">
+                    <div className="w-full xl:w-1/2 h-1/2 flex flex-wrap gap-3">
                         <h1 className="w-full text-xl">Contents :</h1>
                         <div>
                             <li>1 x AeroPress Go</li>

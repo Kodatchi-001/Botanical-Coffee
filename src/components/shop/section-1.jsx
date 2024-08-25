@@ -97,11 +97,11 @@ export default function Shop_section_1() {
                             .filter(item => filter === "All" || item.category === filter)
                             .map(item => (
                                 <div key={item.id} className="w-full sm:w-[45%] lg:w-[32%] h-[50vh] lg:h-[60vh] rounded-3xl flex flex-col justify-between p-3 gap-3 lg:gap-0 bg-white cards-shop">
-                                    <div className="w-full h-4/6 flex rounded-3xl relative">
+                                    <div className="w-full h-4/6 flex rounded-3xl">
                                         <div className="w-full h-full rounded-3xl" id={`background-image-cards-${item.id}`}>
-                                        </div>
-                                        <div className="w-full h-1/3 p-4 absolute">
-                                            <i className='bx bxs-heart text-xl button-blur-icone px-4 py-3 rounded-full text-white'></i>
+                                            <div className="w-full h-1/3 p-4">
+                                                <i className='bx bxs-heart text-xl button-blur-icone px-4 py-3 rounded-full text-white'></i>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="w-full h-[30%] flex flex-wrap lg:gap-2 xl:gap-0">

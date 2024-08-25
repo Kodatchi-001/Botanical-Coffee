@@ -1,6 +1,30 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer_v2() {
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        // window.location.pathname will return "/shop/products".
+        switch (window.location.pathname) {
+            case '/Menu':
+                setActiveSection('Menu');
+                break;
+            case '/Locations':
+                setActiveSection('Locations');
+                break;
+            case '/Jobs':
+                setActiveSection('Jobs');
+                break;
+            case '/Shop':
+                setActiveSection('Shop');
+                break;
+            default:
+                setActiveSection('');
+                break;
+        }
+    }, []);
+
     return <>
         <footer className="w-full h-[85vh] flex flex-col justify-between items-end mt-10">
             <div className="w-full h-[60%] rounded-3xl p-6" id="menu-1">
@@ -14,10 +38,10 @@ export default function Footer_v2() {
                     </div>
                     <div className="w-[85%] h-[35%] flex justify-center flex-wrap mt-auto button-blur-footer-link">
                         <div className="w-full h-full flex justify-center items-center gap-4 text-2xl text-white">
-                            <i class='bx bxl-instagram button-blur-icone-footer p-4 rounded-full'></i>
-                            <i class='bx bxl-pinterest-alt button-blur-icone-footer p-4 rounded-full' ></i>
-                            <i class='bx bxl-twitter button-blur-icone-footer p-4 rounded-full' ></i>
-                            <i class='bx bx-envelope button-blur-icone-footer p-4 rounded-full' ></i>
+                            <i class='bx bxl-instagram Border_White p-4 rounded-full'></i>
+                            <i class='bx bxl-pinterest-alt Border_White p-4 rounded-full' ></i>
+                            <i class='bx bxl-twitter Border_White p-4 rounded-full' ></i>
+                            <i class='bx bx-envelope Border_White p-4 rounded-full' ></i>
                         </div>
                     </div>
                 </div>
@@ -26,18 +50,18 @@ export default function Footer_v2() {
                 <div className="w-full h-full flex justify-center flex-wrap">
                     <div className="w-full h-1/2 flex justify-center">
                         <div className="w-full lg:w-5/6 h-full flex justify-center items-center lg:text-lg lg:px-3 flex-wrap lg:gap-8 text-white">
-                            <Link to="/" className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start">HomePage</Link>
-                            <Link to="/Menu" className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start">Menu</Link>
-                            <Link to="/Locations" className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start">Locations</Link>
-                            <Link to="/Jobs" className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start">Jobs</Link>
-                            <Link to="/Shop" className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start">Shop</Link>
+                            <Link to="/" className="w-1/3 lg:w-auto text-center text-xl lg:text-start">HomePage</Link>
+                            <Link to="/Menu" className={`w-1/3 lg:w-auto text-center text-xl lg:text-start ${activeSection === 'Menu' ? 'text-orange-500' : 'text-white'}`}>Menu</Link>
+                            <Link to="/Locations" className={`w-1/3 lg:w-auto text-center text-xl lg:text-start ${activeSection === 'Locations' ? 'text-orange-500' : 'text-white'}`}>Locations</Link>
+                            <Link to="/Jobs" className={`w-1/3 lg:w-auto text-center text-xl lg:text-start ${activeSection === 'Jobs' ? 'text-orange-500' : 'text-white'}`}>Jobs</Link>
+                            <Link to="/Shop" className={`w-1/3 lg:w-auto text-center text-xl lg:text-start ${activeSection === 'Shop' ? 'text-orange-500' : 'text-white'}`}>Shop</Link>
                         </div>
                     </div>
                     <div className="w-full lg:w-5/6 h-1/2 flex justify-center button-blur-footer-link">
                         <ul className="w-full lg:w-5/6 h-full flex justify-center items-center lg:text-lg lg:px-3 flex-wrap lg:gap-8 text-white">
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start"><a href="">Privacy Policy</a></li>
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start"><a href="">Imprint</a></li>
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-[1rem] lg:text-start"><a href="">404</a></li>
+                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">Privacy Policy</a></li>
+                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">Imprint</a></li>
+                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">404</a></li>
                         </ul>
                     </div>
                 </div>
