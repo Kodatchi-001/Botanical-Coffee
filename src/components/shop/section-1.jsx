@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../footer";
 import Header_v2 from "../header-v2";
+import { Link } from "react-router-dom";
 
 export default function Shop_section_1() {
     const [filter, setFilter] = useState("All");
@@ -97,7 +98,7 @@ export default function Shop_section_1() {
                             .map(item => (
                                 <div key={item.id} className="w-full sm:w-[45%] lg:w-[32%] h-[50vh] lg:h-[60vh] rounded-3xl flex flex-col justify-between p-3 gap-3 lg:gap-0 bg-white cards-shop">
                                     <div className="w-full h-4/6 flex rounded-3xl relative">
-                                        <div className= "w-full h-full rounded-3xl" id={`background-image-cards-${item.id}`}>
+                                        <div className="w-full h-full rounded-3xl" id={`background-image-cards-${item.id}`}>
                                         </div>
                                         <div className="w-full h-1/3 p-4 absolute">
                                             <i className='bx bxs-heart text-xl button-blur-icone px-4 py-3 rounded-full text-white'></i>
@@ -110,7 +111,9 @@ export default function Shop_section_1() {
                                         </div>
                                         <div className="w-full h-1/2 flex justify-between items-center">
                                             <h1 className="text-xl">{item.price}</h1>
-                                            <i className="bx bx-chevron-right text-5xl p-2 scale-90 rounded-full cursor-pointer bg-black text-white"></i>
+                                            <Link to="/Products">
+                                                <i className="bx bx-chevron-right text-5xl p-2 scale-90 rounded-full cursor-pointer bg-black text-white"></i>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
