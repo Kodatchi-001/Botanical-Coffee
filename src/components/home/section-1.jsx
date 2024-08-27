@@ -9,7 +9,7 @@ export default function Section_1() {
                         <Header />
                     </div>
                     <div className="w-full h-1/2 flex justify-center items-center text-white">
-                        <div className="w-full lg:w-4/6 h-[55%] lg:h-[85%] flex items-center justify-center flex-wrap Animation-tittle">
+                        <div className="w-full lg:w-4/6 2xl:w-1/2 h-[55%] lg:h-[85%] flex items-center justify-center flex-wrap Animation-tittle">
                             <h1 className="w-5/6 lg:w-full xl:w-[80%] text-center xl:text-start text-2xl lg:text-4xl">Enjoy the taste of</h1>
                             <h1 className="text-6xl lg:text-[7.5rem] lg:scale-150 mt-[-2vh]">botanical</h1>
                             <p className="sm:w-5/6 md:w-4/5 lg:w-4/6 text-center text-stone-300">
@@ -41,7 +41,7 @@ export default function Section_1() {
                         </div>
                         <div className="w-full lg:w-1/4 h-5/6 flex justify-end mt-auto lg:flex-wrap absolute lg:relative">
                             <div className="w-[30%] lg:w-full h-full lg:h-1/2 flex justify-center lg:justify-end items-end lg:items-center px-5 z-10 py-5 lg:py-0">
-                                <a href="#section-1" className="flex items-center text-4xl p-2 rounded-full Border_White cursor-pointer text-orange-500">
+                                <a href="#section-1" className="flex items-center text-4xl p-2 rounded-full Border_White cursor-pointer text-orange-500  hover:bg-white">
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                             </div>

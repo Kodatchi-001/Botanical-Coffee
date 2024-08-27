@@ -35,13 +35,13 @@ export default function Header() {
         <header className="w-[95%] h-4/6 px-5 lg:flex justify-between rounded-full Border_White border-white overflow-hidden hidden">
             <div className="w-1/4 h-full lg:flex items-center gap-2 text-black">
                 <Link to="/" className='px-8 py-2 rounded-full text-lg bg-white cursor-pointer Animation-header-left z-20'>Home</Link>
-                <Link to="/Menu" className='px-8 py-2 rounded-full text-xl text-white border-2 Border_White cursor-pointer Animation-header-left z-10'>Menu</Link>
+                <Link to="/Menu" className='px-8 py-2 rounded-full text-xl text-white hover:text-black hover:bg-white border-2 Border_White cursor-pointer Animation-header-left z-10'>Menu</Link>
             </div>
             <div className="w-1/4 h-full lg:flex justify-end items-center gap-2 text-black">
-                <Link to="/Locations" className='px-8 py-2 rounded-full text-xl text-white border-2 Border_White cursor-pointer Animation-header-right'>Locations</Link>
-                <Link to="/Jobs" className='px-8 py-2 rounded-full text-xl text-white border-2 Border_White cursor-pointer Animation-header-right'>Jobs</Link>
-                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-white border-2 Border_White cursor-pointer Animation-header-right'>
-                    <i class='bx bx-cart text-2xl text-orange-500'></i>
+                <Link to="/Locations" className='px-8 py-2 rounded-full text-xl text-white hover:text-black hover:bg-white border-2 Border_White cursor-pointer Animation-header-right'>Locations</Link>
+                <Link to="/Jobs" className='px-8 py-2 rounded-full text-xl text-white hover:text-black hover:bg-white border-2 Border_White cursor-pointer Animation-header-right'>Jobs</Link>
+                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-white hover:text-black hover:bg-white border-2 Border_White cursor-pointer Animation-header-right'>
+                    <i class='bx bx-cart text-2xl text-orange-500 '></i>
                 </Link>
             </div>
         </header>

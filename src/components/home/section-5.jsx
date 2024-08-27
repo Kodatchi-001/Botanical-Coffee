@@ -1,6 +1,6 @@
 export default function Section_5() {
     return <>
-        <section className="w-full lg:h-screen lg:px-8 xl:px-36 mt-16">
+        <section className="w-full lg:h-screen lg:px-8 xl:px-36 2xl:px-96 mt-16">
             <div className="w-full h-full flex flex-wrap gap-5 lg:gap-0">
                 <div className="w-full h-[40%] flex flex-col justify-center gap-8 items-center">
                     <h1 className="lg:w-[60%] text-5xl lg:text-[5rem] text-center lg:leading-[12vh]">It’s not standard. Or normal.</h1>

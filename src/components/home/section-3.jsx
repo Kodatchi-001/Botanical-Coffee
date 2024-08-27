@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Section_3() {
     return <>
-        <section className="w-full lg:h-screen flex flex-wrap lg:px-8 xl:px-36 mt-10">
+        <section className="w-full lg:h-screen flex flex-wrap lg:px-8 xl:px-36 2xl:px-96 mt-10">
             <div className="w-full h-1/3 flex justify-center lg:justify-start items-center gap-8 lg:gap-0 flex-wrap lg:flex-nowrap">
                 <h1 className="text-5xl lg:text-[5.2rem] lg:leading-[13vh] text-center lg:text-start">
                     Unnecessarily Good Good(s)

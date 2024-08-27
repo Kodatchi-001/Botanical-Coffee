@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Section_4() {
     return <>
-        <section className="w-full lg:h-[115vh] lg:px-8 xl:px-36 mt-16 flex flex-wrap gap-6 lg:gap-0">
+        <section className="w-full lg:h-[115vh] lg:px-8 xl:px-36 2xl:px-96 mt-16 flex flex-wrap gap-6 lg:gap-0">
             <div className="w-full h-1/4 flex justify-center lg:justify-between items-center flex-wrap-reverse gap-6 lg:gap-0">
                 <p className="w-5/6 text-center lg:text-start lg:w-1/3">
                     We go places that others wouldn’t.
