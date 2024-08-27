@@ -24,7 +24,7 @@ export default function Shop_section_1() {
         <section className="w-full h-full flex flex-wrap mb-14">
             <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5">
                 <div className="fixed">
-                    <Header_v2 />
+                    <Header_v2 Color={"black"} border={"border-black"} />
                 </div>
             </div>
             <div className="w-full h-full flex flex-wrap gap-8 lg:px-40">

@@ -19,6 +19,9 @@ export default function Footer_v2() {
             case '/Shop':
                 setActiveSection('Shop');
                 break;
+            case '/Products':
+                setActiveSection('Shop');
+                break;
             default:
                 setActiveSection('');
                 break;

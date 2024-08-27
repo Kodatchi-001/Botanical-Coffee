@@ -5,6 +5,7 @@ import { Navbar_v2 } from '../utils/navbar-v2';
 export default function Header() {
     const [scrolled_navbar, setScrolled_navbar] = useState(false);
     const [valide, setvalide] = useState(false);
+    const [colorLinks, setcolorLinks] = useState(false)
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
@@ -12,10 +13,19 @@ export default function Header() {
     };
 
     useEffect(() => {
+        switch (window.location.pathname) {
+            case '/':
+                setcolorLinks('HomePage');
+                break;
+            default:
+                setcolorLinks('');
+                break;
+        }
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+
     }, []);
 
     const toggleNavbar = Navbar_v2(setvalide, valide);
@@ -39,7 +49,7 @@ export default function Header() {
         <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white Border_White background-blur lg:hidden z-50"
             onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
-                <Link to="/" className=''>Home</Link>
+                <Link to="/" className={`${colorLinks == 'HomePage' ? 'text-orange-500' : 'text-{Color}'}`}>Home</Link>
                 <Link to="/Menu">Menu</Link>
                 <Link to="/Locations">Locations</Link>
                 <Link to="/Jobs">Jobs</Link>

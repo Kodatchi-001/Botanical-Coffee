@@ -1,12 +1,16 @@
 import Footer_v2 from "../footer-v2";
+import Header_v2 from "../header-v2";
 export default function Locations_section_1() {
     return <>
         <section className="w-full lg:h-screen flex flex-wrap p-3 gap-5 lg:gap-0">
             <div className="w-full lg:w-[32%] h-full flex flex-col gap-20 lg:fixed">
-                <div className="w-full h-[40vh] lg:h-1/3 background-image-HomePage rounded-3xl flex items-end px-6 py-8">
-                    <h1 className="text-5xl text-white ">Locations</h1>
+                <div className="w-full h-[38vh] lg:h-1/2 background-image-HomePage rounded-3xl flex flex-col items-end relative pb-9 p-4 pl-8">
+                    <div className="w-1/2 lg:w-full fixed lg:absolute flex justify-end">
+                        <Header_v2 Color={"white"} border={"Border_White"} />
+                    </div>
+                    <h1 className="w-full text-5xl text-white bottom-0 mt-auto ">Locations</h1>
                 </div>
-                <div className="w-full h-1/4 lg:flex flex-col justify-center gap-3 text-3xl hidden">
+                {/* <div className="w-full h-1/4 lg:flex flex-col justify-center gap-3 text-3xl hidden">
                     <div className="w-full flex items-center gap-3">
                         <div className="w-[5%] h-[1%] bg-orange-500"></div>
                         <h1>Pargue</h1>
@@ -19,7 +23,7 @@ export default function Locations_section_1() {
                         <div className="w-[5%] h-[1%] bg-orange-500"></div>
                         <h1>Vienna</h1>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="w-1/3 h-full hidden lg:flex">
 

@@ -1,22 +1,46 @@
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar_v2 } from "../utils/navbar-v2";
 
 
-export default function Header_v2() {
+export default function Header_v2({ Color, border }) {
     const [valide, setvalide] = useState(false);
-    const toggleNavbar = Navbar_v2(setvalide,valide)
+    const toggleNavbar = Navbar_v2(setvalide, valide);
+    const [colorLinks, setcolorLinks] = useState(false)
 
+    useEffect(() => {
+        // window.location.pathname will return "/shop/products".
+        switch (window.location.pathname) {
+            case '/Menu':
+                setcolorLinks('Menu');
+                break;
+            case '/Locations':
+                setcolorLinks('Locations');
+                break;
+            case '/Jobs':
+                setcolorLinks('Jobs');
+                break;
+            case '/Shop':
+                setcolorLinks('Shop');
+                break;
+            case '/Products':
+                setcolorLinks('Shop');
+                break;
+            default:
+                setcolorLinks('');
+                break;
+        }
+    }, []);
     return <>
         {/*Navbar-V2*/}
-        <header className="flex items-center flex-col rounded-3xl overflow-hidden gap-3 text-black background-blur border-2 border-black z-50"
+        <header className={`flex items-center flex-col rounded-3xl overflow-hidden gap-3 text-${Color} background-blur border-2 ${border} z-50`}
             onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
-                <Link to="/" className=''>Home</Link>
-                <Link to="/Menu">Menu</Link>
-                <Link to="/Locations">Locations</Link>
-                <Link to="/Jobs">Jobs</Link>
-                <Link to="/Shop">Shop</Link>
+                <Link to="/">Home</Link>
+                <Link to="/Menu" className={`${colorLinks == 'Menu' ? 'text-orange-500' : 'text-{Color}'}`}>Menu</Link>
+                <Link to="/Locations" className={`${colorLinks == 'Locations' ? 'text-orange-500' : 'text-{Color}'}`}>Locations</Link>
+                <Link to="/Jobs" className={`${colorLinks == 'Jobs' ? 'text-orange-500' : 'text-{Color}'}`}>Jobs</Link>
+                <Link to="/Shop" className={`${colorLinks == 'Shop' ? 'text-orange-500' : 'text-{Color}'}`}>Shop</Link>
             </div>
             <div className="w-5/6 h-full flex justify-center gap-5 px-6 py-5 cursor-pointer">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
