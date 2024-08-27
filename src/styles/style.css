@@ -384,3 +384,9 @@ i {
     background-size: cover;
     background-position: center;
 }
+
+#Note-Found{
+    background-image: url(../assets/not-found.png);
+    background-position: cover;
+    background-position: center;
+}

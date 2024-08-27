@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../header";
 export default function Section_1() {
     return <>
@@ -45,9 +46,9 @@ export default function Section_1() {
                                 </a>
                             </div>
                             <div className="w-[70%] sm:w-auto h-1/3 lg:h-[36%] sm:px-3 flex justify-center sm:justify-end items-center mt-auto ml-auto bg-[#f0efef] bg-rotate z-20">
-                                <button className="px-5 lg:px-6 xl:px-11 py-3 rounded-full text-2xl border-size font-bold text-black">
+                                <Link to="/shop" className="px-5 lg:px-6 xl:px-11 py-3 rounded-full text-2xl border-size font-bold text-black">
                                     Explore Goodies
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
