@@ -59,9 +59,9 @@ export default function Footer_v2() {
                     </div>
                     <div className="w-full lg:w-5/6 h-1/2 flex justify-center button-blur-footer-link">
                         <ul className="w-full lg:w-5/6 h-full flex justify-center items-center lg:text-lg lg:px-3 flex-wrap lg:gap-8 text-white">
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">Privacy Policy</a></li>
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">Imprint</a></li>
-                            <li className="w-1/3 lg:w-auto text-center text-xl lg:text-start"><a href="">404</a></li>
+                            <h2 className="w-1/3 lg:w-auto text-center text-xl lg:text-start">Privacy Policy</h2>
+                            <h2 className="w-1/3 lg:w-auto text-center text-xl lg:text-start">Imprint</h2>
+                            <h2 className="w-1/3 lg:w-auto text-center text-xl lg:text-start">404</h2>
                         </ul>
                     </div>
                 </div>

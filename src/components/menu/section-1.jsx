@@ -1,6 +1,6 @@
 import Footer_v2 from "../footer-v2";
 
-export default function Menu_section_1() {
+export default function Menu_section_1 () {
     return <>
         <section className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3">

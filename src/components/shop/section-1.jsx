@@ -9,51 +9,13 @@ export default function Shop_section_1() {
     const filterItems = category => setFilter(category);
 
     const items = [
-        {
-            id: 1,
-            category: "Coffee",
-            title: "Marsha",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$12 – $39",
-        },
-        {
-            id: 2,
-            category: "Gear",
-            title: "V60 Dripper",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$49",
-        },
-        {
-            id: 3,
-            category: "Merchandise",
-            title: "Porcelain Cup",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$39",
-        },
-        {
-            id: 4,
-            category: "Merchandise",
-            title: "T-shirt Green",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$79",
-        },
-        {
-            id: 5,
-            category: "Gear",
-            title: "V60 Paper filter",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$19",
-        },
-        {
-            id: 6,
-            category: "Gear",
-            title: "Aeropress GO",
-            description: "Cherry truffle, Blueberry, Kakao nibs",
-            price: "$19",
-        },
-
+        { id: 1, category: "Coffee", title: "Marsha", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$12 – $39" },
+        { id: 2, category: "Gear", title: "V60 Dripper", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$49" },
+        { id: 3, category: "Merchandise", title: "Porcelain Cup", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$39" },
+        { id: 4, category: "Merchandise", title: "T-shirt Green", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$79" },
+        { id: 5, category: "Gear", title: "V60 Paper filter", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$19" },
+        { id: 6, category: "Gear", title: "Aeropress GO", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$19" },
     ];
-
     return <>
         <section className="w-full h-full flex flex-wrap mb-14">
             <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5">
@@ -69,7 +31,7 @@ export default function Shop_section_1() {
                         Maybe that's because we're unnecessarily driven.
                     </p>
                 </div>
-                <div className="w-full h-full flex flex-wrap gap-5">
+                <div className="w-full h-full flex flex-wrap gap-8 lg:gap-5">
                     <div className="w-full h-[12vh] flex justify-center lg:justify-start items-center flex-wrap gap-2 text-xl">
                         <button
                             className={`px-8 py-[0.6rem] rounded-full ${filter == "All" ? "bg-black text-white" : "border-2 border-black"}`}

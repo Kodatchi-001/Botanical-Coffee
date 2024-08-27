@@ -40,14 +40,14 @@ export default function Footer() {
                     <div className="w-[95%] h-[40%] flex justify-center items-center button-blur-footer-link">
                         <div className="w-[40%] h-3/6 lg:flex justify-around items-center text-white hidden">
                             <ul className="w-full h-full flex justify-end gap-5 items-center text-lg lg:pr-8 flex-wrap">
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Imprint</a></li>
-                                <li><a href="">404</a></li>
+                                <h2>Privacy Policy</h2>
+                                <h2>Imprint</h2>
+                                <h2>404</h2>
                             </ul>
                         </div>
                         <div className="w-5/6 h-5/6 lg:w-[40%] lg:h-3/6 flex justify-around items-center lg:button-blur-footer-left text-white">
                             <ul className="w-full h-full flex lg:justify-around items-center lg:text-lg lg:px-3 flex-wrap">
-                                <Link to="/" className= {`w-1/3 lg:w-auto text-center lg:text-start ${activeSection === 'HomePage' ? 'text-orange-500' : 'text-white'}`}>HomePage</Link>
+                                <Link to="/" className={`w-1/3 lg:w-auto text-center lg:text-start ${activeSection === 'HomePage' ? 'text-orange-500' : 'text-white'}`}>HomePage</Link>
                                 <Link to="/Menu" className="w-1/3 lg:w-auto text-center lg:text-start">Menu</Link>
                                 <Link to="/Locations" className="w-1/3 lg:w-auto text-center lg:text-start">Locations</Link>
                                 <Link to="/Jobs" className="w-1/3 lg:w-auto text-center lg:text-start">Jobs</Link>
