@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Footer from "../footer";
 import Header_v2 from "../header-v2";
 import { Link } from "react-router-dom";
+import { ListeItems } from "../../utils/Liste-items";
 
 export default function Shop_section_1() {
     const [filter, setFilter] = useState("All");
+    const { Index_Items, setIndex_Items } = useContext(ListeItems);
 
     const filterItems = category => setFilter(category);
 
@@ -16,6 +18,8 @@ export default function Shop_section_1() {
         { id: 5, category: "Gear", title: "V60 Paper filter", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$19" },
         { id: 6, category: "Gear", title: "Aeropress GO", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$19" },
     ];
+    const SendIndex = index => setIndex_Items([...Index_Items, index]);
+
     return <>
         <section className="w-full h-full flex flex-wrap mb-14">
             <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5">
@@ -73,7 +77,7 @@ export default function Shop_section_1() {
                                         </div>
                                         <div className="w-full h-1/2 flex justify-between items-center">
                                             <h1 className="text-xl">{item.price}</h1>
-                                            <Link to="/Products">
+                                            <Link to="/Products" onClick={() => SendIndex(item.id)}>
                                                 <i className="bx bx-chevron-right text-5xl p-2 scale-90 rounded-full cursor-pointer bg-black text-white"></i>
                                             </Link>
                                         </div>

@@ -11,19 +11,22 @@ import Jobs from './pages/jobs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Shop from './pages/Shop';
 import Products from './pages/products';
+import { ListeProvider } from './utils/Liste-items';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home_Page />} />
-        <Route path="/Menu" element={<Menu_Page />} />
-        <Route path="/Locations" element={<Locations/>} />
-        <Route path="/Jobs" element={<Jobs/>} />
-        <Route path="/Shop" element={<Shop/>} />
-        <Route path="/Products" element={<Products/>} />
-      </Routes>
-    </BrowserRouter>
+    <ListeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home_Page />} />
+          <Route path="/Menu" element={<Menu_Page />} />
+          <Route path="/Locations" element={<Locations />} />
+          <Route path="/Jobs" element={<Jobs />} />
+          <Route path="/Shop" element={<Shop />} />
+          <Route path="/Products" element={<Products />} />
+        </Routes>
+      </BrowserRouter>
+    </ListeProvider>
   </React.StrictMode>
 );
