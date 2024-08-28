@@ -51,7 +51,7 @@ export default function Header() {
             </div>
         </header>
         {/*Navbar-V2*/}
-        <header className="w-1/2 flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white Border_White background-blur lg:hidden z-50"
+        <header className="flex items-center flex-col rounded-3xl overflow-hidden fixed gap-3 text-white Border_White background-blur lg:hidden z-50"
             onClick={toggleNavbar}>
             <div className={`w-full flex-col gap-2 text-xl px-7 pt-5 ${valide ? 'flex' : 'hidden'}`}>
                 <Link to="/" className={`${colorLinks == 'HomePage' ? 'text-orange-500' : 'text-{Color}'}`}>Home</Link>
@@ -60,7 +60,7 @@ export default function Header() {
                 <Link to="/Jobs">Jobs</Link>
                 <Link to="/Shop">Shop</Link>
             </div>
-            <div className="w-5/6 h-full flex gap-5 px-2 py-5 button-blur-footer-link">
+            <div className="w-5/6 h-full flex py-5 button-blur-footer-link gap-5 pl-4 pr-12">
                 <i class='bx bx-menu text-orange-500 text-3xl'></i>
                 <h1 className="text-2xl flex items-center">botanical</h1>
             </div>
