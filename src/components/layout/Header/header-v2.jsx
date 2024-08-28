@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { Navbar_v2 } from "../utils/navbar-v2";
+import { Navbar_v2 } from "../../../utils/navbar-v2";
 
 
 export default function Header_v2({ Color, border }) {

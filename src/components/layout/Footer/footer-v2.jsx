@@ -30,8 +30,8 @@ export default function Footer_v2() {
 
     return <>
         <footer className="w-full h-[85vh] flex flex-col justify-between items-end mt-10">
-            <div className="w-full h-[60%] rounded-3xl p-6" id="menu-1">
-                <div className="w-full h-full rounded-3xl flex justify-center flex-wrap button-blur-footer ">
+            <div className="w-full h-[60%] rounded-3xl p-6 z-10" id="menu-1">
+                <div className="w-full h-full rounded-3xl flex justify-center flex-wrap button-blur-footer">
                     <div className="w-full h-[60%] flex flex-col justify-center items-center gap-6 text-white">
                         <h1 className="text-3xl lg:text-4xl">Join the community!</h1>
                         <div className="w-4/5 lg:w-full flex justify-center flex-wrap gap-5">

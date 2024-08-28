@@ -390,3 +390,7 @@ i {
     background-position: cover;
     background-position: center;
 }
+
+button,i{
+    transition: 0.5s ease;
+}

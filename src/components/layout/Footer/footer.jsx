@@ -20,13 +20,13 @@ export default function Footer() {
     }, []);
 
     return <>
-        <footer className="w-full h-screen p-3 pt-8 flex absolute z-40">
+        <footer className="w-full h-screen p-3 pt-8 flex">
             <div className="w-full h-full rounded-3xl flex flex-wrap pt-10 px-8 background-image-HomePage">
                 <div className="w-full h-1/2 flex flex-col justify-evenly items-center text-white">
                     <h1 className="text-5xl lg:text-7xl text-center lg:text-start">Join the community!</h1>
-                    <div className="w-full lg:w-1/3 flex justify-around flex-wrap gap-3 lg:gap-0">
-                        <input type="email" className="w-full lg:w-auto pl-10 lg:px-8 py-4 rounded-full text-black" placeholder="Your-email@gmail.com" />
-                        <button className="w-full lg:w-auto lg:px-8 py-3 lg:py-2 text-lg rounded-full bg-orange-500">Sign Up</button>
+                    <div className="flex justify-around flex-wrap gap-5">
+                        <input type="email" className="w-full lg:w-auto pl-7 pr-24 py-3 rounded-full text-black" placeholder="Your-email@gmail.com" />
+                        <button className="w-full lg:w-auto lg:px-9 text-lg rounded-full bg-orange-500 hover:border border-orange-500 hover:bg-transparent">Sign Up</button>
                     </div>
                     <p className="w-full text-center">No spam. Just weekly news from the Botanic world.</p>
                 </div>

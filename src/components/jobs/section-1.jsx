@@ -1,5 +1,5 @@
-import Footer_v2 from "../footer-v2";
-import Header_v2 from "../header-v2";
+import Footer_v2 from "../layout/Footer/footer-v2";
+import Header_v2 from "../layout/Header/header-v2";
 
 export default function Jobs_section_1() {
     return <>
@@ -35,7 +35,7 @@ export default function Jobs_section_1() {
                             perfect cup and creating memorable experiences for our customers, bring your
                             expertise to Botanica and let's brew excellence together
                         </p>
-                        <button className="px-8 py-3 bg-black text-white rounded-full">
+                        <button className="px-8 py-3 bg-black text-white hover:border-black hover:text-white hover:bg-orange-500 rounded-full">
                             Apply Now
                         </button>
                     </div>
@@ -48,7 +48,7 @@ export default function Jobs_section_1() {
                             Bring your leadership skills to Botanica and help us create a vibrant
                             community for coffee lovers.
                         </p>
-                        <button className="px-8 py-3 bg-black text-white rounded-full">
+                        <button className="px-8 py-3 bg-black text-white hover:border-black hover:text-white hover:bg-orange-500 rounded-full">
                             Apply Now
                         </button>
                     </div>
@@ -60,7 +60,7 @@ export default function Jobs_section_1() {
                             flavors, turning green beans into aromatic masterpieces. Join our team
                             and let's roast, brew, and savor the essence of coffee together.
                         </p>
-                        <button className="px-8 py-3 bg-black text-white rounded-full">
+                        <button className="px-8 py-3 bg-black text-white hover:border-black hover:text-white hover:bg-orange-500 rounded-full">
                             Apply Now
                         </button>
                     </div>

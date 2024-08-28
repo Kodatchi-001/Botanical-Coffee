@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import Footer from "../footer";
-import Header_v2 from "../header-v2";
+import Footer from "../layout/Footer/footer";
+import Header_v2 from "../layout/Header/header-v2";
 import { Link } from "react-router-dom";
 import { ListeItems } from "../../utils/Liste-items";
 
@@ -22,12 +22,12 @@ export default function Shop_section_1() {
 
     return <>
         <section className="w-full h-full flex flex-wrap mb-14">
-            <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5">
+            <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5 z-50">
                 <div className="fixed">
                     <Header_v2 Color={"black"} border={"border-black"} />
                 </div>
             </div>
-            <div className="w-full h-full flex flex-wrap gap-8 lg:px-40">
+            <div className="w-full h-full flex flex-wrap gap-8 lg:px-24 xl:px-40">
                 <div className="w-full lg:h-[50vh] flex flex-col items-center justify-center gap-8">
                     <h1 className="w-4/5 lg:w-1/2 text-5xl text-center lg:text-[5.2rem] font-bold">Unnecessarily Good Good(s)</h1>
                     <p className="w-5/6 lg:w-1/3 text-center">
@@ -38,31 +38,31 @@ export default function Shop_section_1() {
                 <div className="w-full h-full flex flex-wrap gap-8 lg:gap-5">
                     <div className="w-full h-[12vh] flex justify-center lg:justify-start items-center flex-wrap gap-2 text-xl">
                         <button
-                            className={`px-8 py-[0.6rem] rounded-full ${filter == "All" ? "bg-black text-white" : "border-2 border-black"}`}
+                            className={`px-8 py-[0.6rem] rounded-full ${filter == "All" ? "bg-black text-white" : "border-2 border-black"} hover:bg-black hover:text-white`}
                             onClick={() => filterItems("All")}>
                             View All
                         </button>
                         <button
-                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Coffee" ? "bg-black text-white" : "border-2 border-black"}`}
+                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Coffee" ? "bg-black text-white" : "border-2 border-black"} hover:bg-black hover:text-white`}
                             onClick={() => filterItems("Coffee")}>
                             Coffee
                         </button>
                         <button
-                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Gear" ? "bg-black text-white" : "border-2 border-black"}`}
+                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Gear" ? "bg-black text-white" : "border-2 border-black"} hover:bg-black hover:text-white`}
                             onClick={() => filterItems("Gear")}>
                             Brewing Gear
                         </button>
                         <button
-                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Merchandise" ? "bg-black text-white" : "border-2 border-black"}`}
+                            className={`px-8 py-[0.6rem] rounded-full ${filter == "Merchandise" ? "bg-black text-white" : "border-2 border-black"} hover:bg-black hover:text-white`}
                             onClick={() => filterItems("Merchandise")}>
                             Merchandise
                         </button>
                     </div>
-                    <div className="w-full h-full flex flex-wrap gap-5 px-3 lg:px-0">
+                    <div className="w-full h-full flex flex-wrap gap-5 lg:gap-3 xl:gap-5 px-3 lg:px-0">
                         {items
                             .filter(item => filter === "All" || item.category === filter)
                             .map(item => (
-                                <div key={item.id} className="w-full sm:w-[45%] lg:w-[32%] h-[50vh] lg:h-[60vh] rounded-3xl flex flex-col justify-between p-3 gap-3 lg:gap-0 bg-white cards-shop">
+                                <div key={item.id} className="w-full sm:w-[45%] lg:w-[32%] h-[50vh] xl:h-[60vh] rounded-3xl flex flex-col justify-between p-3 gap-3 lg:gap-0 bg-white cards-shop">
                                     <div className="w-full h-4/6 flex rounded-3xl">
                                         <div className="w-full h-full rounded-3xl" id={`background-image-cards-${item.id}`}>
                                             <div className="w-full h-1/3 p-4">

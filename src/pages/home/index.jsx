@@ -1,4 +1,4 @@
-import Footer from "../../components/footer";
+import Footer from "../../components/layout/Footer/footer";
 import Section1 from "../../components/home/section-1";
 import Section2 from "../../components/home/section-2";
 import Section3 from "../../components/home/section-3";

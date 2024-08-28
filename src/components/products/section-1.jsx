@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import Footer_v2 from "../footer-v2";
+import Footer_v2 from "../layout/Footer/footer-v2";
 import { ListeItems } from "../../utils/Liste-items";
 
 export default function Products_section_1() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { Navbar_v2 } from '../utils/navbar-v2';
+import { Navbar_v2 } from '../../../utils/navbar-v2';
 
 export default function Header() {
     const [scrolled_navbar, setScrolled_navbar] = useState(false);
@@ -9,7 +9,12 @@ export default function Header() {
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
-        scrollY > 150 ? setScrolled_navbar(true) : setScrolled_navbar(false);
+        if (scrollY < 150 || scrollY > 4000) {
+            setScrolled_navbar(false);
+        } else if (scrollY >= 150 && scrollY <= 4000) {
+            setScrolled_navbar(true);
+        }
+
     };
 
     useEffect(() => {
@@ -61,14 +66,14 @@ export default function Header() {
             </div>
         </header>
         {/*Navbar-V3*/}
-        <header className={`w-[40%] h-[8vh] bottom-2 ${scrolled_navbar ? 'animate' : 'mb-[-20vh]'} hidden lg:flex rounded-full border-transparent border-white fixed z-40 Border_White`}>
-            <div className="w-full h-full flex justify-between items-center px-2">
-                <Link to="/" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20'>Home</Link>
-                <Link to="/Menu" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20'>Menu</Link>
-                <Link to="/Locations" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20'>Locations</Link>
-                <Link to="/Jobs" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20'>Jobs</Link>
-                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-orange-500 bg-black cursor-pointer'>
-                    <i class='bx bx-cart text-2xl text-orange-500'></i>
+        <header className={`h-[8vh] bottom-2 ${scrolled_navbar ? 'animate' : 'mb-[-20vh]'} hidden lg:flex rounded-full border-transparent border-white fixed z-40 Border_White`}>
+            <div className="w-full h-full flex justify-between items-center px-2 gap-3">
+                <a href="#HomePage" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20 hover:bg-white hover:text-black'>Home</a>
+                <Link to="/Menu" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20 hover:bg-white hover:text-black'>Menu</Link>
+                <Link to="/Locations" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20 hover:bg-white hover:text-black'>Locations</Link>
+                <Link to="/Jobs" className='px-8 py-2 rounded-full text-lg bg-black text-white cursor-pointer Border_White z-20 hover:bg-white hover:text-black'>Jobs</Link>
+                <Link to="/Shop" className='px-2 py-1 rounded-full text-xl text-orange-500 bg-black cursor-pointer  hover:bg-white'>
+                    <i class='bx bx-cart text-2xl'></i>
                 </Link>
             </div>
         </header>

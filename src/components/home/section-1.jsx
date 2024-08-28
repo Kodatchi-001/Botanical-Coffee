@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Header from "../header";
+import Header from "../layout/Header/header";
 export default function Section_1() {
     return <>
-        <section className="w-full h-screen p-3">
+        <section className="w-full h-screen p-3" id="HomePage">
             <div className="w-full h-full rounded-3xl background-image-HomePage">
                 <div className="w-full h-full rounded-3xl flex flex-wrap background-blur-black">
                     <div className="w-full h-[15%] flex justify-end lg:justify-center items-start lg:items-center relative p-3 lg:p-0">
