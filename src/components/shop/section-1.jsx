@@ -22,9 +22,11 @@ export default function Shop_section_1() {
 
     return <>
         <section className="w-full h-full flex flex-wrap mb-14">
-            <div className="w-full h-[15vh] lg:h-[10vh] flex justify-end p-5 z-50">
-                <div className="fixed">
-                    <Header_v2 Color={"black"} border={"border-black"} />
+            <div className="w-full h-[20vh] lg:h-[10vh] flex justify-end p-5 z-50">
+                <div className="w-full h-full flex flex-col justify-between items-end rounded-3xl pb-9 p-1 pl-8">
+                    <div className="w-1/2 fixed lg:flex justify-end">
+                        <Header_v2 Color={"black"} border={"border-black"} />
+                    </div>
                 </div>
             </div>
             <div className="w-full h-full flex flex-wrap gap-8 lg:px-24 xl:px-40">

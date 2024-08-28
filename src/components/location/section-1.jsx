@@ -2,14 +2,14 @@ import Footer_v2 from "../layout/Footer/footer-v2";
 import Header_v2 from "../layout/Header/header-v2";
 export default function Locations_section_1() {
     return <>
-        <section className="w-full lg:h-screen flex flex-wrap gap-5 lg:gap-0">
+        <section className="w-full lg:h-screen flex flex-wrap">
             <div className="w-full lg:w-1/3 h-full flex flex-col gap-5 lg:fixed p-3">
-                <div className="w-full h-[38vh] lg:h-[57%] background-image-HomePage rounded-3xl">
-                    <div className="w-full h-full rounded-3xl flex flex-col items-end relative pb-9 p-4 pl-8 background-blur-black-2">
-                        <div className="w-1/2 lg:w-full fixed lg:absolute flex justify-end">
+                <div className="w-full h-[38vh] lg:h-[57%] background-image-HomePage rounded-3xl z-50">
+                    <div className="w-full h-full flex flex-col justify-between items-end rounded-3xl pb-9 p-4 pl-8">
+                        <div className="w-1/2 fixed lg:flex justify-end">
                             <Header_v2 Color={"white"} border={"Border_White"} />
                         </div>
-                        <h1 className="w-full text-5xl text-white bottom-0 mt-auto ">Locations</h1>
+                        <h1 className="w-full text-5xl lg:text-7xl text-white mt-auto">Menu</h1>
                     </div>
                 </div>
                 <div className="w-full h-1/4 lg:flex flex-col justify-center gap-3 text-3xl hidden">
@@ -30,7 +30,7 @@ export default function Locations_section_1() {
             <div className="w-1/3 h-full hidden lg:flex">
 
             </div>
-            <div className="w-full lg:w-2/3 lg:h-screen flex flex-wrap gap-4 pt-3 pr-3 px-3 lg:px-0">
+            <div className="w-full lg:w-2/3 lg:h-screen flex flex-wrap gap-5 lg:gap-4 pt-3 pr-3 px-3 lg:px-0">
                 <div className="w-full lg:h-[80vh] rounded-[1.8rem]" id="locations-1">
                     <div className="w-full h-full flex items-end rounded-[1.8rem] p-6 pt-36 lg:pt-0 background-dark-img">
                         <div className="w-full h-full lg:h-[40%] flex flex-col justify-between gap-3 text-white">

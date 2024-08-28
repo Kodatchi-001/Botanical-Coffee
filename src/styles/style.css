@@ -8,6 +8,10 @@ h1 {
     font-family: 'Satoshi', sans-serif;
 }
 
+header div{
+    transition: 2s ease;
+}
+
 body {
     background-color: #f0efef;
 }
@@ -400,3 +404,4 @@ i {
 button,i{
     transition: 0.5s ease;
 }
+

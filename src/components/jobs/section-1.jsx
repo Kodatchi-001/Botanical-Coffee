@@ -4,7 +4,7 @@ import Header_v2 from "../layout/Header/header-v2";
 export default function Jobs_section_1() {
     return <>
         <section className="w-full flex flex-wrap">
-            <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3">
+            <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3 z-50">
                 <div className="w-full h-full flex flex-col justify-between items-end rounded-3xl pb-9 p-4 pl-8 background-image-jobs">
                     <div className="w-1/2 fixed lg:flex justify-end">
                         <Header_v2 Color={"white"} border={"Border_White"} />

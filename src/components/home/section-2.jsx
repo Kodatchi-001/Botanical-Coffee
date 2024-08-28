@@ -42,7 +42,7 @@ export default function Section_2() {
 
     return <>
         <section className="w-full lg:h-[80vh] xl:h-screen mt-5 lg:px-8 xl:px-36 2xl:px-96 lg:py-8" id="section-1">
-            <div className="w-full h-full">
+            <div className="w-full h-full px-2 lg:px-0">
                 <div className="w-full h-1/3 flex justify-between items-center flex-wrap gap-5 lg:gap-0">
                     <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-between items-center flex-wrap">
                         <div className="w-full lg:w-5/6 xl:w-1/2 h-full flex flex-col justify-center items-center lg:items-start gap-4">

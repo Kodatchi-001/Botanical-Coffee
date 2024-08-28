@@ -13,7 +13,7 @@ export default function Section_4() {
                     Another Menu
                 </h1>
             </div>
-            <div className="w-full h-3/4 flex flex-col justify-between flex-wrap gap-6 lg:gap-0 p-2 lg:p-0">
+            <div className="w-full h-3/4 flex flex-col justify-between flex-wrap gap-6 lg:gap-0 px-5 lg:px-0">
                 <div className="w-full h-[48.2%] flex justify-between items-center flex-wrap gap-6 lg:gap-0">
                     <div className="w-full sm:w-[45%] lg:w-[64%] h-full rounded-3xl flex flex-wrap p-4 py-6 gap-5 lg:gap-0 text-white cards-section-4" id="menu-1">
                         <div className="w-full h-[75%] flex justify-end items-start">

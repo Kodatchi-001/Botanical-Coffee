@@ -25,8 +25,8 @@ export default function Footer() {
                 <div className="w-full h-1/2 flex flex-col justify-evenly items-center text-white">
                     <h1 className="text-5xl lg:text-7xl text-center lg:text-start">Join the community!</h1>
                     <div className="flex justify-around flex-wrap gap-5">
-                        <input type="email" className="w-full lg:w-auto pl-7 pr-24 py-3 rounded-full text-black" placeholder="Your-email@gmail.com" />
-                        <button className="w-full lg:w-auto lg:px-9 text-lg rounded-full bg-orange-500 hover:border border-orange-500 hover:bg-transparent">Sign Up</button>
+                        <input type="email" className="w-5/6 lg:w-auto pl-7 pr-24 py-3 rounded-full text-black" placeholder="Your-email@gmail.com" />
+                        <button className="w-5/6 lg:w-auto lg:px-9 py-2 lg:py-0 text-lg rounded-full bg-orange-500 hover:border border-orange-500 hover:bg-transparent">Sign Up</button>
                     </div>
                     <p className="w-full text-center">No spam. Just weekly news from the Botanic world.</p>
                 </div>
