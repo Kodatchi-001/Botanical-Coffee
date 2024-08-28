@@ -21,7 +21,7 @@ export default function Section_1() {
                     </div>
                     <div className="w-full h-[35%] flex lg:justify-between items-end lg:items-center xl:items-start relative">
                         <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-6 lg:py-10 pb-28 lg:pb-0 flex justify-between gap-3">
-                            <div className="w-[73%] h-full flex flex-col justify-center gap-2 px-5 py-10 text-white Border_White rounded-3xl overflow-hidden">
+                            <div className="w-[73%] h-full flex flex-col justify-center gap-2 px-5 py-10 text-white Border_White rounded-3xl overflow-hidden border-transparent-radius">
                                 <h1 className="text-2xl">99+Beans</h1>
                                 <p className="text-sm">
                                     “Too far” is exactly where we want to be. All in the name of coffee.

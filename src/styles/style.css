@@ -46,13 +46,13 @@ body {
 }
 
 .background-image-HomePage {
-    background-image: url(../assets/background-home-page.jpg);
+    background-image: url(../assets/background-Page.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .background-blur-black {
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.61);
 }
 
 .border-transparent {
@@ -261,7 +261,7 @@ i {
 
 .button-blur-footer {
     backdrop-filter: blur(10px);
-    background-color: rgba(205, 204, 204, 0.176);
+    background-color: rgba(0, 0, 0, 0.242);
 }
 
 .button-blur-footer a:hover {
