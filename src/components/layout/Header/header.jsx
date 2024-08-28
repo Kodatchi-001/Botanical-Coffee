@@ -37,7 +37,7 @@ export default function Header() {
 
     return <>
         {/*Navbar-V1*/}
-        <header className="w-[95%] h-4/6 px-5 lg:flex justify-between rounded-full Border_White border-white overflow-hidden hidden">
+        <header className="w-[95%] h-4/6 px-5 lg:flex justify-between rounded-full Border_White border-white overflow-hidden hidden border-transparent-2">
             <div className="w-1/4 h-full lg:flex items-center gap-2 text-black">
                 <Link to="/" className='px-8 py-2 rounded-full text-lg bg-white cursor-pointer Animation-header-left z-20'>Home</Link>
                 <Link to="/Menu" className='px-8 py-2 rounded-full text-xl text-white hover:text-black hover:bg-white border-2 Border_White cursor-pointer Animation-header-left z-10'>Menu</Link>

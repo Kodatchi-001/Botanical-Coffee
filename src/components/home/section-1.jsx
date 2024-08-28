@@ -11,8 +11,8 @@ export default function Section_1() {
                     <div className="w-full h-1/2 flex justify-center items-center text-white">
                         <div className="w-full lg:w-4/6 2xl:w-1/2 h-[55%] sm:h-1/2 lg:h-auto xl:h-[85%] flex flex-col items-center justify-center gap-5 lg:gap-10 2xl:gap-11 Animation-tittle">
                             <h1 className="w-5/6 lg:w-full xl:w-[80%] text-center xl:text-start 2xl:text-center text-2xl lg:text-4xl">Enjoy the taste of</h1>
-                            <h1 className="text-6xl sm:text-8xl lg:text-[7.5rem] lg:scale-150 mt-[-2vh] lg:mt-0 xl:mt-[-2vh]">botanical</h1>
-                            <p className="sm:w-4/6 md:w-1/2 lg:w-5/6 xl:w-4/6 text-center text-stone-300">
+                            <h1 className="text-7xl sm:text-8xl lg:text-[7.5rem] lg:scale-150 mt-[-2vh] lg:mt-0 xl:mt-[-2vh]">botanical</h1>
+                            <p className="w-5/6 sm:w-4/6 md:w-1/2 lg:w-5/6 xl:w-4/6 text-center text-stone-300">
                                 Our coffee doesn’t have to taste that way. But it does.It’s
                                 not your typical. It's unnecessarily good. Maybe that's because
                                 we're unnecessarily driven.
