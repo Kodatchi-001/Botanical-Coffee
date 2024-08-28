@@ -10,7 +10,7 @@ export default function Section_3() {
                 <h1 className="text-5xl lg:text-[5.2rem] xl:text-[5rem] lg:leading-[13vh] text-center lg:text-start">
                     Unnecessarily Good Good(s)
                 </h1>
-                <div className="w-full lg:w-4/6 xl:w-5/6 h-full flex justify-center lg:justify-start items-end pb-8">
+                <div className="w-full lg:w-4/6 xl:w-full h-full flex justify-center lg:justify-start items-end pb-8">
                     <Link to="/Shop" className="text-lg px-8 py-2 rounded-full bg-black text-white">
                         Shop All
                     </Link>

@@ -49,11 +49,17 @@ body {
     background-image: url(../assets/background-Page.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .background-blur-black {
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.486);
 }
+
+.background-blur-black-2 {
+    background-color: rgba(0, 0, 0, 0.221);
+}
+
 
 .border-transparent {
     backdrop-filter: blur(20px);

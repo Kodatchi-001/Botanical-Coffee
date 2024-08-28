@@ -19,8 +19,8 @@ export default function Section_6() {
                 setindexcards(null)
             }
             else {
-                isDesktop ? e.currentTarget.style.height = '28%' : e.currentTarget.style.height = '50%';
-                e.currentTarget.querySelector('div:first-child').style.height = '60%'
+                isDesktop ? e.currentTarget.style.height = '28%' : e.currentTarget.style.height = '30%';
+                e.currentTarget.querySelector('div:first-child').style.height = '50%'
                 e.currentTarget.querySelector('i').style.rotate = '90deg'
                 setindexcards(e.currentTarget)
             }
@@ -36,7 +36,7 @@ export default function Section_6() {
     }, [indexcards]);
 
     return <>
-        <section className="w-full h-[70vh] lg:h-screen flex items-center px-2 lg:px-8 xl:px-36 2xl:px-96 mt-4">
+        <section className="w-full h-[70vh] lg:h-screen flex items-center px-2 lg:px-8 xl:px-36 2xl:px-96">
             <div className="w-full h-[80%] flex flex-col justify-between gap-5 lg:gap-0">
                 <div className="w-full h-[20%] lg:h-[22%] px-6 lg:pl-12 lg:pr-8 rounded-3xl cursor-pointer flex-wrap overflow-hidden border border-black cards-section-6">
                     <div className="w-full h-full flex justify-between items-center">

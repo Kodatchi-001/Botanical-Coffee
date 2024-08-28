@@ -4,11 +4,13 @@ export default function Locations_section_1() {
     return <>
         <section className="w-full lg:h-screen flex flex-wrap gap-5 lg:gap-0">
             <div className="w-full lg:w-1/3 h-full flex flex-col gap-5 lg:fixed p-3">
-                <div className="w-full h-[38vh] lg:h-[57%] background-image-HomePage rounded-3xl flex flex-col items-end relative pb-9 p-4 pl-8">
-                    <div className="w-1/2 lg:w-full fixed lg:absolute flex justify-end">
-                        <Header_v2 Color={"white"} border={"Border_White"} />
+                <div className="w-full h-[38vh] lg:h-[57%] background-image-HomePage rounded-3xl">
+                    <div className="w-full h-full rounded-3xl flex flex-col items-end relative pb-9 p-4 pl-8 background-blur-black-2">
+                        <div className="w-1/2 lg:w-full fixed lg:absolute flex justify-end">
+                            <Header_v2 Color={"white"} border={"Border_White"} />
+                        </div>
+                        <h1 className="w-full text-5xl text-white bottom-0 mt-auto ">Locations</h1>
                     </div>
-                    <h1 className="w-full text-5xl text-white bottom-0 mt-auto ">Locations</h1>
                 </div>
                 <div className="w-full h-1/4 lg:flex flex-col justify-center gap-3 text-3xl hidden">
                     <div className="w-full flex items-center gap-3">
