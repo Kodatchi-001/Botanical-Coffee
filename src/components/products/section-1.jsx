@@ -57,6 +57,7 @@ export default function Products_section_1() {
 
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         setIndex_Items(Index_Items.slice(-1))
     }, []);
 

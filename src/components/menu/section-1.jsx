@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import Footer_v2 from "../layout/Footer/footer-v2";
 import Header_v2 from "../layout/Header/header-v2";
 
 export default function Menu_section_1() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return <>
         <section className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3 z-50">

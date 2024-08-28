@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import Footer_v2 from "../layout/Footer/footer-v2";
 import Header_v2 from "../layout/Header/header-v2";
 export default function Locations_section_1() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return <>
         <section className="w-full lg:h-screen flex flex-wrap">
             <div className="w-full lg:w-1/3 h-full flex flex-col gap-5 lg:fixed p-3">

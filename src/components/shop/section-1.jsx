@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState , useEffect } from "react";
 import Footer from "../layout/Footer/footer";
 import Header_v2 from "../layout/Header/header-v2";
 import { Link } from "react-router-dom";
@@ -19,6 +19,10 @@ export default function Shop_section_1() {
         { id: 6, category: "Gear", title: "Aeropress GO", description: "Cherry truffle, Blueberry, Kakao nibs", price: "$19" },
     ];
     const SendIndex = index => setIndex_Items([...Index_Items, index]);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return <>
         <section className="w-full h-full flex flex-wrap mb-14">
