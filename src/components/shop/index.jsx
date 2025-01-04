@@ -1,6 +1,6 @@
-import { useContext, useState , useEffect } from "react";
-import Footer from "../layout/Footer/footer";
-import Header_v2 from "../layout/Header/header-v2";
+import { useContext, useState, useEffect } from "react";
+import Footer from "../footer/v1";
+import Header from "../header/v2";
 import { Link } from "react-router-dom";
 import { ListeItems } from "../../utils/Liste-items";
 
@@ -29,7 +29,7 @@ export default function Shop_section_1() {
             <div className="w-full h-[20vh] lg:h-[10vh] flex justify-end p-5 z-50">
                 <div className="w-full h-full flex flex-col justify-between items-end rounded-3xl pb-9 p-1 pl-8">
                     <div className="w-1/2 fixed lg:flex justify-end">
-                        <Header_v2 Color={"black"} border={"border-black"} />
+                        <Header Color={"black"} border={"border-black"} />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../layout/Header/header";
+import Header from "../../header/v1";
+
 export default function Section_1() {
     return <>
         <section className="w-full h-screen p-3" id="HomePage">

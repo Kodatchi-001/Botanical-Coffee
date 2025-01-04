@@ -19,7 +19,5 @@ export default function Section_5() {
                 </div>
             </div>
         </section>
-
-
     </>
 }

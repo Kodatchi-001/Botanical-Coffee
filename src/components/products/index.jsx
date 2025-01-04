@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import Footer_v2 from "../layout/Footer/footer-v2";
+import Footer from "../footer/v2";
 import { ListeItems } from "../../utils/Liste-items";
 
 export default function Products_section_1() {
@@ -100,7 +100,7 @@ export default function Products_section_1() {
                     <div className="w-full h-[50vh] lg:h-screen rounded-3xl mt-8 lg:mt-5" id={`background-image-cards-Products-${Index_Items}`}>
 
                     </div>
-                    <Footer_v2 />
+                    <Footer />
                 </div>
             </section>
         )) : (

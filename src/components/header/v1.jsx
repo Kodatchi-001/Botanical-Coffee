@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import { Navbar_v2 } from '../../../utils/navbar-v2';
+import { Navbar } from '../../utils/navbar-v2';
 
 export default function Header() {
     const [scrolled_navbar, setScrolled_navbar] = useState(false);
@@ -32,8 +32,7 @@ export default function Header() {
         };
 
     }, []);
-
-    const toggleNavbar = Navbar_v2(setvalide, valide);
+    const toggleNavbar = Navbar(setvalide, valide);
 
     return <>
         {/*Navbar-V1*/}

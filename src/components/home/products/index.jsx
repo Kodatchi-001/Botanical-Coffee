@@ -1,6 +1,6 @@
-import coffee from "../../assets/coffee.png";
-import coffee_2 from "../../assets/coffee-2.png";
-import coffee_3 from "../../assets/coffee-3.png";
+import coffee from "../../../assets/coffee.png";
+import coffee_2 from "../../../assets/coffee-2.png";
+import coffee_3 from "../../../assets/coffee-3.png";
 import { Link } from "react-router-dom";
 
 export default function Section_3() {

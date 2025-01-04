@@ -1,7 +1,7 @@
-import Jobs_section_1 from "../../components/jobs/section-1";
+import Job from "../../components/jobs/index";
 
 export default function Jobs() {
     return <>
-        <Jobs_section_1 />
+        <Job />
     </>
 }

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Note_found  from "../../assets/not-found.png";
 
-export default function Not_Found_section() {
+export default function NotFound() {
     return <>
         <section className="w-full h-screen flex justify-center items-center px-6 xl:px-0 bg-white">
             <div className="w-full xl:w-5/6 h-5/6 flex flex-wrap">

@@ -5,7 +5,6 @@ export default function Footer() {
     const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
-        // window.location.pathname will return "/shop/products".
         switch (window.location.pathname) {
             case '/':
                 setActiveSection('HomePage');

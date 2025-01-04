@@ -1,17 +1,18 @@
 import { useEffect } from "react";
-import Footer_v2 from "../layout/Footer/footer-v2";
-import Header_v2 from "../layout/Header/header-v2";
+import Footer from "../footer/v2";
+import Header from "../header/v2";
 
-export default function Menu_section_1() {
+export default function Menu() {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
+      
     return <>
         <section className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 h-[40vh] lg:h-full lg:fixed px-2 py-3 z-50">
                 <div className="w-full h-full flex flex-col justify-between items-end rounded-3xl pb-9 p-4 pl-8 background-image-menu">
                     <div className="w-1/2 fixed lg:flex justify-end">
-                        <Header_v2 Color={"white"} border={"Border_White"} />
+                        <Header Color={"white"} border={"Border_White"} />
                     </div>
                     <h1 className="w-full text-5xl lg:text-7xl text-white mt-auto">Menu</h1>
                 </div>
@@ -109,7 +110,7 @@ export default function Menu_section_1() {
                         </div>
                     </div>
                 </div>
-                <Footer_v2 />
+                <Footer />
             </div>
         </section>
     </>

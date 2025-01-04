@@ -1,7 +1,7 @@
-import Section_1 from "../../components/location/section-1";
+import Location from "../../components/location/index";
 
 export default function Locations() {
     return <>
-        <Section_1 />
+        <Location />
     </>
 }

@@ -9,10 +9,10 @@ import Locations from './pages/location';
 import Jobs from './pages/jobs';
 //Import React Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Shop from './pages/Shop';
+import Shop from './pages/shop';
 import Products from './pages/products';
 import { ListeProvider } from './utils/Liste-items';
-import Not_Found from './pages/Not-found';
+import NotFound from './components/404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,7 +26,7 @@ root.render(
           <Route path="/Jobs" element={<Jobs />} />
           <Route path="/Shop" element={<Shop />} />
           <Route path="/Products" element={<Products />} />
-          <Route path="*" element={<Not_Found/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </ListeProvider>

@@ -1,7 +1,7 @@
-import Shop_section_1 from "../../components/shop/section-1";
+import Shops from "../../components/shop";
 
 export default function Shop() {
     return <>
-        <Shop_section_1/>
+        <Shops/>
     </>
 }

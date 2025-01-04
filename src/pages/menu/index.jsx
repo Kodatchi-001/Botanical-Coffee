@@ -1,7 +1,7 @@
-import Menu_section_1 from "../../components/menu/section-1";
+import Menuu from "../../components/menu/index";
 
 export default function Menu() {
     return <>
-        <Menu_section_1 />
+        <Menuu />
     </>
 }

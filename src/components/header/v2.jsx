@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import { Navbar_v2 } from "../../../utils/navbar-v2";
+import { Navbar } from "../../utils/navbar-v2";
 
 
 export default function Header_v2({ Color, border }) {
     const [valide, setvalide] = useState(false);
-    const toggleNavbar = Navbar_v2(setvalide, valide);
+    const toggleNavbar = Navbar(setvalide, valide);
     const [colorLinks, setcolorLinks] = useState(false)
 
     useEffect(() => {
-        // window.location.pathname will return "/shop/products".
         switch (window.location.pathname) {
             case '/Menu':
                 setcolorLinks('Menu');
@@ -31,6 +30,7 @@ export default function Header_v2({ Color, border }) {
                 break;
         }
     }, []);
+    
     return <>
         {/*Navbar-V2*/}
         <header className={`flex items-center flex-col rounded-3xl overflow-hidden gap-3 text-${Color} background-blur border-2 ${border} z-50`}
